@@ -1,4 +1,3 @@
-<?php include 'dblogin.php'; ?>
 
 <html>
     <head>
@@ -12,37 +11,58 @@
     </head>
 
     <body>
-<table border="1">
-    <th>Vorname</th>
-    <th>Nachname</th>
-    <th>Geburtsdatums</th>
-    <tr>
-        <td>test</td>
-        <td>test</td>
-        <td>test</td>
-    </tr>
 
-    <?php
+<?php
+/*$SERVER='localhost';
+$user='root';
+$password='jens1234';
+$db='turnierverwaltung';
+$port='3306';*/
 
-    $sql= "SELECT VName, NName, GDatum FROM spieler";
-    $run_sql = mysqli_query($conn,$sql);
+$sql= "SELECT VName, NName, GDatum FROM spieler";
+$verbindung = @new mysqli("localhost","root","","turnierverwaltung");
 
-    while($rows  = mysqli_fetch_array($run_sql))
+if($verbindung->connect_errno!=0)
+{
+    echo "Es ist ein Fehler aufgetreten.";
+}
+else
+{
+
+    $ergebnis=$verbindung->query($sql);
+    if(!$ergebnis)
     {
-        echo '<tr>
-        <td>'.$rows['VNAME'].'</td>
-        <td>'.$rows['NName'].'</td>
-        <td>'.$rows['GDatum'].'</td>
-
-        </tr>';
+        echo "Bei der Abfrage ist ein Fehler aufgetreten.<br />";
     }
-    ?>
-    <tr>
-        <td>test</td>
-        <td>test</td>
-        <td>test</td>
-    </tr>
-</table>
+    else
+    {
+        echo "<table border=\"2\">";
+
+        while($zeile=$ergebnis->fetch_row())
+        {
+            echo "<tr>";
+
+            while($attribute=$ergebnis->fetch_field())
+            {
+                echo "<th>".$attribute->name."</th>";
+            }
+
+            echo "</tr>";
+            foreach($zeile as $feld)
+            {
+                echo "<td>".$feld."</td>";
+            }
+
+
+        }
+        echo "</table>";
+    }
+
+}
+
+
+
+?>
 
     </body>
 </html>
