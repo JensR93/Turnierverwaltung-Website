@@ -52,13 +52,8 @@ nav a {
 <body>
 <nav>
     <ul>
-        <li><a href="#">Startseite</a></li>
-        <li><a href="#">Bücher</a></li>
-        <li><a href="#">Video-Trainings</a></li>
-        <li><a href="#">Jobs</a></li>
-        <li><a href="#">Kontakt</a></li>
-        <li><a href="#">Newsletter</a></li>
-        <li><a href="#">Impressum</a></li>
+        <li><a href="kopiert.php">Kopiert.php</a></li>
+        <li><a href="turnieruebersicht.php?name=Tennis">Turniersuche</a></li>
     </ul>
     <?php
     include 'suchleiste.php';
