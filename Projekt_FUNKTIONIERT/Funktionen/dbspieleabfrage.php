@@ -6,7 +6,7 @@
  * Time: 03:05
  */
 
-function SpieleTabelleErzeugen($sql)
+function SpieleTabelleErzeugen($sql, $team)
 {
     include 'dblogin.php';
 

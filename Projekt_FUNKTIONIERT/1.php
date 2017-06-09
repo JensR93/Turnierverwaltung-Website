@@ -60,6 +60,10 @@ nav a {
         <li><a href="#">Newsletter</a></li>
         <li><a href="#">Impressum</a></li>
     </ul>
+    <?php
+    include 'suchleiste.php';
+
+    ?>
 </nav>
 </body>
 </html>
