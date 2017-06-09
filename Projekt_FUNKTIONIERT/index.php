@@ -1,7 +1,7 @@
 <?php
 include 'funktionen/dbspielerabfrage.php';
 include 'funktionen/Einfuegen.php';
-include 'menu/1.php';
+include '1.php';
 ?>
 <head>
     <style type="text/css">

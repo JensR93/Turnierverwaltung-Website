@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f0ecd4d-cfc7-45a9-8181-26ae57f3b5a8" name="Default" comment="SQL mit joins">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/Funktionen/dbspieleabfrage_neu.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/Funktionen/dbspielersuche.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/kopiert.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/spieleruebersicht.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/suchleiste.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PHPTests/Funktionen/dbspieleabfrage_neu.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PHPTests/kopiert.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/PHPTests/Funktionen/dbspieleabfrage.php" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/Funktionen/dbspieleabfrage.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/PHPTests/index.php" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/index.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/PHPTests/menu/1.php" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/1.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/PHPTests/menu/index.php" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/menu/index.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/PHPTests/neu.iml" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/neu.iml" />
+    <list default="true" id="8f0ecd4d-cfc7-45a9-8181-26ae57f3b5a8" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/Funktionen/dbturnierabfrage.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/turnieruebersicht.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/index.php" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/index.php" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,29 +55,23 @@
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f4ea6338-ec6f-4bfd-847e-675e396c873e/console.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="63" lean-forward="false" selection-start-line="0" selection-start-column="63" selection-end-line="0" selection-end-column="63" />
+              <caret line="0" column="48" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="184" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="1.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/1.php">
+      <file leaf-file-name="dbturnierabfrage.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/Funktionen/dbturnierabfrage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="30" column="8" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="suchleiste.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/suchleiste.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="25" column="2" lean-forward="true" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
+            <state relative-caret-position="435">
+              <caret line="49" column="32" lean-forward="true" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
               <folding>
-                <element signature="e#324#409#0#PHP" expanded="true" />
+                <marker date="1497044409421" expanded="true" signature="388:431" ph="SELECT * FRO... turnier" />
+                <marker date="1497044409421" expanded="true" signature="658:840" ph="SELECT turni... turnier" />
+                <marker date="1497044409421" expanded="true" signature="658:884" ph="SELECT * Fro... turnier" />
+                <marker date="1497044409421" expanded="true" signature="1610:1617" ph="SELECT turni... turnier" />
+                <marker date="1497044409421" expanded="true" signature="1610:1793" ph="SELECT turni... turnier" />
               </folding>
             </state>
           </provider>
@@ -95,8 +80,8 @@
       <file leaf-file-name="dbspielersuche.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/Funktionen/dbspielersuche.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1044">
-              <caret line="58" column="28" lean-forward="true" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
+            <state relative-caret-position="324">
+              <caret line="58" column="18" lean-forward="true" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
               <folding>
                 <marker date="1497039529896" expanded="true" signature="280:345" ph="SELECT * FRO... users" />
                 <marker date="1497039529896" expanded="true" signature="1462:1503" ph="SELECT * FRO... spieler" />
@@ -106,23 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="spieleruebersicht.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/spieleruebersicht.php">
+      <file leaf-file-name="turnieruebersicht.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/turnieruebersicht.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <marker date="1497041146434" expanded="true" signature="326:347" ph="Select * fro... spieler" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dbspieleabfrage_neu.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/Funktionen/dbspieleabfrage_neu.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="26" />
+            <state relative-caret-position="252">
+              <caret line="14" column="35" lean-forward="false" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -131,18 +104,24 @@
       <file leaf-file-name="kopiert.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/kopiert.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="19" column="55" lean-forward="false" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
+            <state relative-caret-position="486">
+              <caret line="27" column="18" lean-forward="false" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
               <folding>
-                <marker date="1497041146462" expanded="true" signature="200:210" ph="..." />
                 <marker date="1497041146462" expanded="true" signature="241:763" ph="SELECT spiel... spieler" />
                 <marker date="1497041146462" expanded="true" signature="780:924" ph="SELECT spiel... spieler" />
                 <marker date="1497041146462" expanded="true" signature="941:1085" ph="SELECT spiel... spieler" />
-                <marker date="1497041146462" expanded="true" signature="1312:1631" ph="..." />
-                <marker date="1497041146462" expanded="true" signature="1332:1631" ph="..." />
-                <marker date="1497041146462" expanded="true" signature="1772:1910" ph="..." />
-                <marker date="1497041146462" expanded="true" signature="1840:1905" ph="..." />
-                <marker date="1497041146462" expanded="true" signature="1986:2013" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spieleruebersicht.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/spieleruebersicht.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="295">
+              <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="63" selection-end-column="14" />
+              <folding>
+                <marker date="1497041146434" expanded="true" signature="326:347" ph="Select * fro... spieler" />
               </folding>
             </state>
           </provider>
@@ -190,7 +169,6 @@
         <option value="$PROJECT_DIR$/PHPTests/Funktionen/dbspielerabfrage.php" />
         <option value="$PROJECT_DIR$/PHPTests/Funktionen/dbspieleabfrage.php" />
         <option value="$PROJECT_DIR$/PHPTests/spielerseite.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f4ea6338-ec6f-4bfd-847e-675e396c873e/console.sql" />
         <option value="$PROJECT_DIR$/PHPTests/Funktionen/dbspieleabfrage_neu.php" />
         <option value="$PROJECT_DIR$/PHPTests/Funktionen/dbspielersuche.php" />
         <option value="$PROJECT_DIR$/PHPTests/menu/suchleiste.php" />
@@ -198,6 +176,12 @@
         <option value="$PROJECT_DIR$/PHPTests/spieleruebersicht.php" />
         <option value="$PROJECT_DIR$/PHPTests/kopiert.php" />
         <option value="$PROJECT_DIR$/PHPTests/1.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f4ea6338-ec6f-4bfd-847e-675e396c873e/console.sql" />
+        <option value="$PROJECT_DIR$/Projekt_FUNKTIONIERT/Funktionen/dbspieleabfrage.php" />
+        <option value="$PROJECT_DIR$/Projekt_FUNKTIONIERT/index.php" />
+        <option value="$PROJECT_DIR$/Projekt_FUNKTIONIERT/Funktionen/dbspielersuche.php" />
+        <option value="$PROJECT_DIR$/Projekt_FUNKTIONIERT/turnieruebersicht.php" />
+        <option value="$PROJECT_DIR$/Projekt_FUNKTIONIERT/Funktionen/dbturnierabfrage.php" />
       </list>
     </option>
   </component>
@@ -778,7 +762,7 @@
       <workItem from="1496955675147" duration="2470000" />
       <workItem from="1496966604100" duration="36000" />
       <workItem from="1496968931607" duration="546000" />
-      <workItem from="1497010436515" duration="29611000" />
+      <workItem from="1497010436515" duration="32707000" />
     </task>
     <task id="LOCAL-00001" summary="menus hinszugefügt">
       <created>1496940258970</created>
@@ -801,11 +785,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497022406505</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="-Suchleiste&#10;-Spielerverweise&#10;-Spielerseite">
+      <created>1497041382644</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1497041382644</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34772000" />
+    <option name="totallyTimeSpent" value="37868000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -831,7 +822,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17279822" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17279822" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14498934" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48494983" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -884,7 +875,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="menus hinszugefügt" />
     <MESSAGE value="SQL mit joins" />
-    <option name="LAST_COMMIT_MESSAGE" value="SQL mit joins" />
+    <MESSAGE value="-Suchleiste&#10;-Spielerverweise&#10;-Spielerseite" />
+    <option name="LAST_COMMIT_MESSAGE" value="-Suchleiste&#10;-Spielerverweise&#10;-Spielerseite" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -895,22 +887,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Baumart2/Beispielbaum_funktioniert.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="66" lean-forward="false" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Baumart2/neuer2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="70" lean-forward="false" selection-start-line="9" selection-start-column="70" selection-end-line="9" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PHP Test.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1206,17 +1182,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/Funktionen/dbspielerabfrage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="28" column="12" lean-forward="false" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
-          <folding>
-            <marker date="1497015792919" expanded="true" signature="662:720" ph="..." />
-            <marker date="1497015792919" expanded="true" signature="670:720" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/Funktionen/Einfuegen.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -1243,16 +1208,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-          <folding>
-            <marker date="1497011250444" expanded="true" signature="422:504" ph="INSERT INTO Spieler... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/Funktionen/dblogin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -1261,19 +1216,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f4ea6338-ec6f-4bfd-847e-675e396c873e/console.sql">
+    <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/1.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="63" lean-forward="false" selection-start-line="0" selection-start-column="63" selection-end-line="0" selection-end-column="63" />
+        <state relative-caret-position="410">
+          <caret line="51" column="6" lean-forward="true" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="6" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="27" lean-forward="false" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+          <folding>
+            <marker date="1497043346931" expanded="true" signature="417:499" ph="INSERT INTO Spieler... " />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/Funktionen/dbspieleabfrage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        <state relative-caret-position="90">
+          <caret line="12" column="54" lean-forward="true" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/Funktionen/dbspielerabfrage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <folding>
+            <marker date="1497015792919" expanded="true" signature="662:720" ph="..." />
+            <marker date="1497015792919" expanded="true" signature="670:720" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1287,10 +1263,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f4ea6338-ec6f-4bfd-847e-675e396c873e/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="48" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="184" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/Funktionen/dbspieleabfrage_neu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1458">
+          <caret line="86" column="9" lean-forward="true" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/Funktionen/dbspielersuche.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1044">
-          <caret line="58" column="28" lean-forward="true" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
+        <state relative-caret-position="324">
+          <caret line="58" column="18" lean-forward="true" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
           <folding>
             <marker date="1497039529896" expanded="true" signature="280:345" ph="SELECT * FRO... users" />
             <marker date="1497039529896" expanded="true" signature="1462:1503" ph="SELECT * FRO... spieler" />
@@ -1299,47 +1291,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/kopiert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="27" column="18" lean-forward="false" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+          <folding>
+            <marker date="1497041146462" expanded="true" signature="241:763" ph="SELECT spiel... spieler" />
+            <marker date="1497041146462" expanded="true" signature="780:924" ph="SELECT spiel... spieler" />
+            <marker date="1497041146462" expanded="true" signature="941:1085" ph="SELECT spiel... spieler" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/spieleruebersicht.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="295">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="63" selection-end-column="14" />
           <folding>
             <marker date="1497041146434" expanded="true" signature="326:347" ph="Select * fro... spieler" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/kopiert.php">
+    <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/turnieruebersicht.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="19" column="55" lean-forward="false" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
+        <state relative-caret-position="252">
+          <caret line="14" column="35" lean-forward="false" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/Funktionen/dbturnierabfrage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="49" column="32" lean-forward="true" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
           <folding>
-            <marker date="1497041146462" expanded="true" signature="200:210" ph="..." />
-            <marker date="1497041146462" expanded="true" signature="241:763" ph="SELECT spiel... spieler" />
-            <marker date="1497041146462" expanded="true" signature="780:924" ph="SELECT spiel... spieler" />
-            <marker date="1497041146462" expanded="true" signature="941:1085" ph="SELECT spiel... spieler" />
-            <marker date="1497041146462" expanded="true" signature="1312:1631" ph="..." />
-            <marker date="1497041146462" expanded="true" signature="1332:1631" ph="..." />
-            <marker date="1497041146462" expanded="true" signature="1772:1910" ph="..." />
-            <marker date="1497041146462" expanded="true" signature="1840:1905" ph="..." />
-            <marker date="1497041146462" expanded="true" signature="1986:2013" ph="..." />
+            <marker date="1497044409421" expanded="true" signature="388:431" ph="SELECT * FRO... turnier" />
+            <marker date="1497044409421" expanded="true" signature="658:840" ph="SELECT turni... turnier" />
+            <marker date="1497044409421" expanded="true" signature="658:884" ph="SELECT * Fro... turnier" />
+            <marker date="1497044409421" expanded="true" signature="1610:1617" ph="SELECT turni... turnier" />
+            <marker date="1497044409421" expanded="true" signature="1610:1793" ph="SELECT turni... turnier" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/Funktionen/dbspieleabfrage_neu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="30" column="8" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
