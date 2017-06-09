@@ -8,61 +8,29 @@
         <link rel="stylesheet" href="css/bootstrap.css">
 
 
+
     </head>
 
     <body>
 
-<?php
-/*$SERVER='localhost';
-$user='root';
-$password='jens1234';
-$db='turnierverwaltung';
-$port='3306';*/
+    <?php
+    echo "php start";
 
-$sql= "SELECT VName, NName, GDatum FROM spieler";
-$verbindung = @new mysqli("localhost","root","","turnierverwaltung");
+    $con = mysqli_connect( "127.0.0.1" , "root" , "" , "turnierverwaltung");
 
-if($verbindung->connect_errno!=0)
-{
-    echo "Es ist ein Fehler aufgetreten.";
-}
-else
-{
-
-    $ergebnis=$verbindung->query($sql);
-    if(!$ergebnis)
+    // Check connection
+    if (mysqli_connect_errno())
     {
-        echo "Bei der Abfrage ist ein Fehler aufgetreten.<br />";
+        echo "Failed to connect to MySQL: " . mysqli_connect_error();
     }
-    else
-    {
-        echo "<table border=\"2\">";
+    echo "php end";
 
-        while($zeile=$ergebnis->fetch_row())
-        {
-            echo "<tr>";
+    mysqli_query( $con , "INSERT INTO users values ( 'id' , 'smith' , 'joe' , 'joepass' )");
 
-            while($attribute=$ergebnis->fetch_field())
-            {
-                echo "<th>".$attribute->name."</th>";
-            }
+    mysqli_close($con);
 
-            echo "</tr>";
-            foreach($zeile as $feld)
-            {
-                echo "<td>".$feld."</td>";
-            }
-
-
-        }
-        echo "</table>";
-    }
-
-}
-
-
-
-?>
+    echo "php end";
+    ?>
 
     </body>
 </html>
