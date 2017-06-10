@@ -10,6 +10,7 @@
 </head>
 <body>
 <?php
+
 if(isset($_GET['id'])) {
     // id index exists
 
@@ -98,8 +99,10 @@ if(isset($_GET['id'])) {
     }echo "</tr>";
 
 }
+echo "Zu erledigen";
         ?>
     </table>
+
 </body>
 </html>
 

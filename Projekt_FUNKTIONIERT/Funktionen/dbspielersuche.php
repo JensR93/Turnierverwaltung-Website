@@ -12,9 +12,11 @@ function SpielerSuche($vorname,$nachname)
 
     $pdo = new PDO('mysql:host=localhost;dbname=turnierverwaltung', $user, $pw);
 
+//SELECT * FROM spieler WHERE VName LIKE '%%' AND NName LIKE '%%'
 
-    $statement = $pdo->prepare("SELECT * FROM spieler WHERE VName = :vorname OR NName = :nachname");
-    $statement->execute(array('vorname' => $vorname, 'nachname' => $nachname));
+    $statement = $pdo->prepare("SELECT * FROM spieler WHERE VName LIKE :vorname And NName LIKE :nachname");
+    $statement->execute(array('vorname' => '%'.$vorname.'%', 'nachname' =>  '%'.$nachname.'%'));
+    //echo $statement->queryString;
     $i=0;
     while ($row = $statement->fetch()) {
 

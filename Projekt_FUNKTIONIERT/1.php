@@ -52,8 +52,10 @@ nav a {
 <body>
 <nav>
     <ul>
-        <li><a href="kopiert.php">Kopiert.php</a></li>
-        <li><a href="turnieruebersicht.php?name=Tennis">Turniersuche</a></li>
+        <li><a href="kopiert.php">Spielübersicht</a></li>
+        <li><a href="turnieruebersicht.php">Turniersuche</a></li>
+        <li><a href="turnierbaum.php">Turnierbaum</a></li>
+        <li><a href="spieleruebersicht.php">Spielerübersicht</a></li>
     </ul>
     <?php
     include 'suchleiste.php';

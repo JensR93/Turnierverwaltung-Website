@@ -32,8 +32,8 @@ function alleTurnier()
 if(isset($_GET['name']))
 {
     //$turnierabfrage = "Tennis";
+    //$turnier = TurnierIDSuche($_GET['name']);
     $turnier = TurnierIDSuche($_GET['name']);
-
     $anzahl= count($turnier);
 
     if($anzahl>0) {
@@ -56,6 +56,7 @@ if(isset($_GET['name']))
     }
     else
     {
+        echo "nichts gefunden";
         alleTurnier();
     }
 }

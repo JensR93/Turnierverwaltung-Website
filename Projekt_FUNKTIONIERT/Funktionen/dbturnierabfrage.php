@@ -33,7 +33,7 @@ return $ergebnis;
 }
  */
 
-function TurnierIDSuche($name)
+function TurnierIDSuche($namee)
 {
     include 'dblogin.php';
 
@@ -42,9 +42,16 @@ function TurnierIDSuche($name)
     $berg=false;
     //$statement = $pdo->prepare("SELECT  turnier.TurnierID, turnier.MatchDauer, turnier.Datum,turnier.Name From turnier INNER JOIN spielklasse ON turnier.TurnierID=spielklasse.SpielklasseID WHERE turnier.name=:name'");
 
-    $statement = $pdo->prepare("SELECT  turnier.TurnierID, turnier.MatchDauer, turnier.Datum,turnier.Name From turnier INNER JOIN spielklasse ON turnier.TurnierID=spielklasse.SpielklasseID WHERE turnier.name = :name");
-    $statement->execute(array('name' => $name));
+    $statement = $pdo->prepare("SELECT DISTINCT turnier.TurnierID, turnier.MatchDauer, turnier.Datum,turnier.Name 
+  From turnier INNER JOIN spielklasse ON turnier.TurnierID=spielklasse.turnierid WHERE turnier.Name LIKE :namee");
+    /*
+   SELECT DISTINCT turnier.TurnierID, turnier.MatchDauer, turnier.Datum,turnier.Name From turnier
+  INNER JOIN spielklasse ON turnier.TurnierID=spielklasse.turnierid WHERE turnier.Name LIKE '%t' '%'
+     */
+
+    $statement->execute(array('namee' =>'%'.$namee.'%'));
     $i=0;
+    //echo $statement->queryString."<br>";
     while ($row = $statement->fetch())
     {
         //echo $row[0] . " " . $row[1] . "<br />";
@@ -62,7 +69,7 @@ function TurnierIDSuche($name)
     }
     if(!$berg)
     {
-        echo "Turnier: ".$name." wurde nicht gefunden";
+        echo "Turnier: ".$namee." wurde nicht gefunden";
 
         return null;
     }
@@ -77,7 +84,7 @@ function TurnierAllSuche()
 {
     include 'dblogin.php';
 
-
+        echo "kein turnier";
 
     $i = 0;
     $erg = [];
@@ -86,7 +93,8 @@ function TurnierAllSuche()
     if ($mysqli->connect_errno > 0) {
         die("Connection to MySQL-server failed!");
     }
-    $result = mysqli_query($mysqli, "SELECT  turnier.TurnierID, turnier.MatchDauer, turnier.Datum,turnier.Name From turnier INNER JOIN spielklasse ON turnier.TurnierID=spielklasse.SpielklasseID");
+    $result = mysqli_query($mysqli, "SELECT DISTINCT turnier.TurnierID, turnier.MatchDauer, turnier.Datum,turnier.Name From turnier 
+                                           INNER JOIN spielklasse ON turnier.TurnierID=spielklasse.turnierid");
     if (mysqli_num_rows($result) > 0)
     {
         while ($row = mysqli_fetch_assoc($result)) {
