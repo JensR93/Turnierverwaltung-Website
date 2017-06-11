@@ -1,5 +1,5 @@
 <html>
-<head>
+<head><link rel="stylesheet" href="css/bootstrap.css">
     <?php
     include 'funktionen/dbturnierabfrage.php';
     include '1.php';
@@ -9,6 +9,7 @@
 
 
 <?php
+include "suchleiste.php";
 function alleTurnier()
 {
     ?>
@@ -17,9 +18,16 @@ function alleTurnier()
     $turniere = TurnierAllSuche();
     for ($i = 0; $i < count($turniere); $i++) {
         echo "<tr>";
-        for ($j = 0; $j < count($turniere[$i]); $j++) {
-            echo "<td>" . $turniere[$i][$j] . "</td>";
+        for ($j = 0; $j < (count($turniere[$i])); $j++)
+        {
+            if ($j==3)
+            {
 
+                echo "<td><a href='spielklassen.php?spielklasseid=".$turniere[$i][4]."'> " . $turniere[$i][$j]."</a></td>";
+            }
+            else {
+                echo "<td>" . $turniere[$i][$j] . "</td>";
+            }
         }
         echo "</tr>";
 
@@ -46,8 +54,19 @@ if(isset($_GET['name']))
     <?php
         for ($i = 0; $i < $anzahl; $i++) {
             echo "<tr>";
-            for ($j = 0; $j < count($turnier[$i]); $j++) {
-                echo "<td>" . $turnier[$i][$j] . "</td>";
+            for ($j = 0; $j < (count($turnier[$i])-1); $j++) {
+
+
+                if ($j==3)
+                {
+
+                    echo "<td><a href='spielklassen.php?spielklasseid=".$turnier[$i][4]."'> " . $turnier[$i][$j]."</a></td>";
+                }
+                else
+                {
+                    echo "<td>" . $turnier[$i][$j]."</td>";
+                }
+
 
             }
             echo "</tr>";

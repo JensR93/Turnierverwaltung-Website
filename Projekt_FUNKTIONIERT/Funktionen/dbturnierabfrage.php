@@ -42,7 +42,7 @@ function TurnierIDSuche($namee)
     $berg=false;
     //$statement = $pdo->prepare("SELECT  turnier.TurnierID, turnier.MatchDauer, turnier.Datum,turnier.Name From turnier INNER JOIN spielklasse ON turnier.TurnierID=spielklasse.SpielklasseID WHERE turnier.name=:name'");
 
-    $statement = $pdo->prepare("SELECT DISTINCT turnier.TurnierID, turnier.MatchDauer, turnier.Datum,turnier.Name 
+    $statement = $pdo->prepare("SELECT DISTINCT turnier.TurnierID, turnier.MatchDauer, turnier.Datum,turnier.Name, turnier.Spielklassen
   From turnier INNER JOIN spielklasse ON turnier.TurnierID=spielklasse.turnierid WHERE turnier.Name LIKE :namee");
     /*
    SELECT DISTINCT turnier.TurnierID, turnier.MatchDauer, turnier.Datum,turnier.Name From turnier
@@ -59,6 +59,7 @@ function TurnierIDSuche($namee)
         $ergebnis[$i][]=$row[1];
         $ergebnis[$i][]=$row[2];
         $ergebnis[$i][]=$row[3];
+        $ergebnis[$i][]=$row[4];
         //$ergebnis[]=$row[1];
         //$ergebnis[]=$row[2];
 
@@ -93,7 +94,7 @@ function TurnierAllSuche()
     if ($mysqli->connect_errno > 0) {
         die("Connection to MySQL-server failed!");
     }
-    $result = mysqli_query($mysqli, "SELECT DISTINCT turnier.TurnierID, turnier.MatchDauer, turnier.Datum,turnier.Name From turnier 
+    $result = mysqli_query($mysqli, "SELECT DISTINCT turnier.TurnierID, turnier.MatchDauer, turnier.Datum,turnier.Name , turnier.Spielklassen From turnier 
                                            INNER JOIN spielklasse ON turnier.TurnierID=spielklasse.turnierid");
     if (mysqli_num_rows($result) > 0)
     {
@@ -102,7 +103,7 @@ function TurnierAllSuche()
             $erg[$i][1] = $row["MatchDauer"];
             $erg[$i][2] = $row["Datum"];
             $erg[$i][3] = $row["Name"];
-
+            $erg[$i][4] = $row["Spielklassen"];
             $i++;
         }
         return $erg;

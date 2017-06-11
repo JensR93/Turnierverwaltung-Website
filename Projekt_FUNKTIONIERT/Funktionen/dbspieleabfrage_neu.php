@@ -22,7 +22,7 @@ function SpieleTabelleErzeugen($sql,$team)
 
 // Platzhalter müssen anstelle des ganzen Wertes verwendet werden
 
-        /*
+        /*}
         $stmt = $mysqli->prepare($sql);
         $stmt->bind_param("ss", $v, $l);*/
 
@@ -83,6 +83,12 @@ function SpieleTabelleErzeugen($sql,$team)
                 $erg["heim"][$i] = $row["heim_vname"] ." ". $row["heim_nname"];
                 $erg["heimid"][$i] = $row["SpielerID"];
                 $i++;
+            }
+        }
+        if ($team == "berechneanzahldurchlaeufe") {
+            while ($row = mysqli_fetch_assoc($result)) {
+                //echo "vname: " . $row["heim_vname"] . " - nName: " . $row["heim_nname"] . "<br>";
+               return $row["count(SpielklasseID)"];
             }
         }
 

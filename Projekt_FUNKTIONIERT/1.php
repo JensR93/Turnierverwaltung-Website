@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Horizontale Navigation mit Overflow</title>
 <style>
-
+    <link rel="stylesheet" href="css/bootstrap.css">
 body {
 	margin:0;
 	font-family:Arial, sans-serif;
@@ -13,7 +13,6 @@ body {
 
 nav {
 	background:slategrey;
-	float:left;
 	width:100%;
 	padding:1em 0;
 	overflow-x:auto;
@@ -52,13 +51,14 @@ nav a {
 <body>
 <nav>
     <ul>
-        <li><a href="kopiert.php">Spielübersicht</a></li>
+        <li><a href="spielklassen.php">Spielklassentabelle</a></li>
         <li><a href="turnieruebersicht.php">Turniersuche</a></li>
         <li><a href="turnierbaum.php">Turnierbaum</a></li>
-        <li><a href="spieleruebersicht.php">Spielerübersicht</a></li>
+        <li><a href="spieleruebersicht.php?vname=&nname=">Spielerübersicht</a></li>
+        <li><a href="spieluebersichtfuerspieler.php">spieluebersichtfuerspieler</a></li>
     </ul>
     <?php
-    include 'suchleiste.php';
+
 
     ?>
 </nav>
