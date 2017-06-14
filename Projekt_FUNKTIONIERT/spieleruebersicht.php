@@ -78,7 +78,6 @@
 
 
     <?php
-    include 'funktionen/dbspielerabfrage.php';
     include 'funktionen/dbspielersuche.php';
     include 'funktionen/dbspieleabfrage_neu.php';
     include 'funktionen/Einfuegen.php';

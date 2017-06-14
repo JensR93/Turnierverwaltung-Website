@@ -1,7 +1,6 @@
 <html>
 <head>
 <?php
-    include 'funktionen/dbspielerabfrage.php';
     include 'funktionen/dbspieleabfrage_neu.php';
     include 'funktionen/Einfuegen.php';
     include '1.php';

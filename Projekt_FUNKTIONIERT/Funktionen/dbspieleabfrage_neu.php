@@ -68,12 +68,64 @@ function SpieleTabelleErzeugen($sql,$team)
                 $i++;
             }
         }
+        if($team=="spielabfrage")
+        {
+            while ($row = mysqli_fetch_assoc($result))
+            {
+                $erg["rundenid"][$i] = $row["RundenID"];
+                $erg["nextspiel"][$i] = $row["NextSpiel"];
+                /*$erg["SpielklasseID"][$i] = $row["SpielklasseID"];*/
+                $i++;
+            }
+            //$erg["rundenid"][$i]="ABBRUCH";
 
+        }
+        if($team=="anzahlspielabfrage")
+        {
+            while ($row = mysqli_fetch_assoc($result)) {
+                $erg["count(spiel.SpielID)"];
+                $i++;
+            }
+
+        }
         if ($team == "gast") {
             while ($row = mysqli_fetch_assoc($result)) {
                 // echo "vname: " . $row["gast_vname"] . " - nName: " . $row["gast_nname"] . "<br>";
                 $erg["gast"][$i] = $row["gast_vname"] ." ". $row["gast_nname"];
                 $erg["gastid"][$i] = $row["SpielerID"];
+
+                $i++;
+            }
+
+        }
+        if ($team == "sieger") {
+            while ($row = mysqli_fetch_assoc($result)) {
+                // echo "vname: " . $row["gast_vname"] . " - nName: " . $row["gast_nname"] . "<br>";
+                $erg["siegerid"][$i] = $row["SiegerID"];
+
+
+                $i++;
+            }
+        }
+        if ($team == "ergebnis") {
+            while ($row = mysqli_fetch_assoc($result)) {
+                $erg[0] = $row["satz1"];
+                $erg[1] = $row["satz2"];
+                $erg[2] = $row["satz3"];
+                $erg[3] = $row["satz4"];
+                $erg[4] = $row["satz5"];
+
+
+            }
+        }
+        if ($team == "gast_neu") {
+            while ($row = mysqli_fetch_assoc($result)) {
+                // echo "vname: " . $row["gast_vname"] . " - nName: " . $row["gast_nname"] . "<br>";
+                $erg["gast"][$i] = $row["gast_vname"] ." ". $row["gast_nname"];
+                $erg["gastid"][$i] = $row["SpielerID"];
+                $erg["siegerid"][$i] = $row["SiegerID"];
+/*                $erg["rundenid"][$i] = $row["RundenID"];
+                $erg["nextspiel"][$i] = $row["NextSpiel"];*/
                 $i++;
             }
         }
@@ -115,6 +167,7 @@ function SpieleTabelleErzeugen($sql,$team)
 
 
     }
+
     return $erg;
 
 
