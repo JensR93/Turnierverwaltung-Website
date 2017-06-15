@@ -101,10 +101,7 @@ function SpieleTabelleErzeugen($sql,$team)
         if ($team == "sieger") {
             while ($row = mysqli_fetch_assoc($result)) {
                 // echo "vname: " . $row["gast_vname"] . " - nName: " . $row["gast_nname"] . "<br>";
-                $erg["siegerid"][$i] = $row["SiegerID"];
-
-
-                $i++;
+                $erg["siegerid"] = $row["SiegerID"];
             }
         }
         if ($team == "ergebnis") {

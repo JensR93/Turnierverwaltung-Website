@@ -20,9 +20,17 @@
 
 <?php
 function printErgebnis($ergebnis){
-    for ($j = 0; $j < (count($ergebnis))-1; $j++) {
-        if($ergebnis[($j+1)]!=Null) {
-            echo $ergebnis[$j]." | ".$ergebnis[$j+1];
+    for ($j = 0; $j < (count($ergebnis)); $j++) {
+        if($ergebnis[($j)]<10 && $ergebnis[($j)] != Null) {
+            $ergebnis[($j)] = "0".$ergebnis[($j)];
+        }
+    }
+    if($ergebnis[0]!=Null){
+        echo $ergebnis[0];
+    }
+    for ($j = 1; $j < (count($ergebnis)); $j++) {
+        if($ergebnis[($j)]!=Null) {
+            echo " | ".$ergebnis[$j];
         }
     }
 }
@@ -34,62 +42,38 @@ function rundeFuellen($erg,$j){
     $ergebnisheimabfrage ="Select Satz1_heim as satz1, Satz2_heim as satz2, Satz3_heim as satz3, Satz4_heim as satz4, Satz5_heim as satz5 from spiel_ergebnis inner join spiel on spiel.SpielID=spiel_ergebnis.SpielID where RundenID=".$erg["rundenid"][$j];
     $ergebnisgast = SpieleTabelleErzeugen($ergebnisgastabfrage,"ergebnis");
     $ergebnisheim = SpieleTabelleErzeugen($ergebnisheimabfrage,"ergebnis");
-    // printErgebnis($ergebnisheim);
     echo"<div class=\"mtch_container\"> <div class=\"match_unit\">";
-
-    if($sieger["siegerid"][0] = $erg["gastid"][$j])
-    {
-        echo"<div class=\"m_segment m_top winner\" data-team-id=".$erg["gastid"][$j].">
+    echo"<div class=\"m_segment m_top ";
+    if($sieger["siegerid"] == $erg["gastid"][$j]) {
+        echo "winner";
+    }
+    else {
+        echo "loser";
+    }
+    echo"\" data-team-id=".$erg["gastid"][$j].">
 		<span>
-		<a href=\"#\">
+		<a href='spieluebersichtfuerspieler.php?spielerid=".$erg["gastid"][$j]."'>
 		<span>"
-            .$erg["gast"][$j]."</span>
-									</a>
-									<strong>";
-        printErgebnis($ergebnisgast);
-        echo"</strong>
-								</span>
-							</div>
-							<div class=\"m_segment m_botm loser\" data-team-id=".$erg["heimid"][$j].">
-								<span>
-									<a href=\"#\">
-										<span>".$erg["heim"][$j]."</span>
-									</a>
-									<strong>";
-        printErgebnis($ergebnisheim);
-
-        echo"</strong>
-		    </span>
-		    </div>";
-
+        .$erg["gast"][$j]."</span></a><strong>";
+    printErgebnis($ergebnisgast);
+    echo"</strong></span></div>
+    <div class=\"m_segment m_botm ";
+    if($sieger["siegerid"] == $erg["gastid"][$j]) {
+        echo "loser";
     }
-    else{
-        echo"<div class=\"m_segment m_top winner\" data-team-id=".$erg["heimid"][$j].">
-		       <span>
-		       <a href=\"#\">
-	        <span>" .$erg["heim"][$j]."</span>
-									</a>
-									<strong>";
-        printErgebnis($ergebnisheim);
-        echo"</strong>
-								</span>
-							</div>
-							<div class=\"m_segment m_botm loser\" data-team-id=".$erg["gastid"][$j].">
-								<span>
-									<a href=\"#\">
-										<span>".$erg["gast"][$j]."</span>
-									</a>
-									<strong>";
-        printErgebnis($ergebnisgast);
-        echo"</strong>
-								</span>
-							</div>";
+    else {
+        echo "winner";
     }
+    echo"\" data-team-id=".$erg["heimid"][$j].">
+		<span>
+		<a href='spieluebersichtfuerspieler.php?spielerid=".$erg["heimid"][$j]."'>
+		<span>"
+        .$erg["heim"][$j]."</span></a><strong>";
+    printErgebnis($ergebnisheim);
+    echo"</strong></span></div>";
     echo"<div class=\"m_dtls\">
 								<span>June 10, 2015 - 8:00 pm</span>
-							</div>
-						</div>
-					</div>";
+							</div></div></div>";
 
 }
 $spielklasseid=1;
@@ -136,57 +120,76 @@ function sqlAbfrage($i){
         </thead>
         <tbody><tr id="playground">
             <?php
-
+            $downCounter=5;
             for ($i = 1; $i <= 5; $i++) {
-
-                //echo "i=".$i;
-
-
-
-                if($i==1) {
-                    echo"<td class=\"round_column r_8 \">";
-                    $erg = sqlAbfrage(3);
-
-                    for ($j = 0; $j < (count($erg["rundenid"]) /2 ); $j++) {
-                        rundeFuellen($erg, $j);
-                    }
-                    echo "</td>";
-
-
-
-                }
-                if ($i == 2) {
-                    $erg = sqlAbfrage(2);
-                    echo"<td class=\"round_column r_4 \">";
-                    for ($j = 0; $j < (count($erg["rundenid"]) / 2); $j++) {
-                        rundeFuellen($erg, $j);
-                    }
-                    echo "</td>";
-                }
-                if ($i == 3) {
-                    $erg = sqlAbfrage(1);
-                    echo"<td class=\"round_column r_2 final \">";
-                    for ($j = 0; $j < (count($erg["rundenid"]) / 2); $j++) {
-                        rundeFuellen($erg, $j);
-                    }
-                    echo "</td>";
-                }
-                if ($i == 4) {
-                    $erg = sqlAbfrage(2);
-                    echo"<td class=\"round_column r_4 reversed \">";
+                $roundvar;
+                if ($i > $downCounter) {
+                    $erg = sqlAbfrage(4-$downCounter);
+                    echo "<td class=\"round_column r_";
+                    echo pow(2,(4-$downCounter))." reversed";
+                    echo" \">";
                     for ($j = count($erg["rundenid"]) / 2; $j < (count($erg["rundenid"])); $j++) {
                         rundeFuellen($erg, $j);
                     }
-                    echo "</td>";
-                }
-                if ($i == 5) {
-                    $erg = sqlAbfrage(3);
-                    echo"<td class=\"round_column r_8 reversed \">";
-                    for ($j = count($erg["rundenid"]) / 2; $j < (count($erg["rundenid"])); $j++) {
+                } else {
+                    $erg = sqlAbfrage(4-$i);
+                    echo "<td class=\"round_column r_";
+                    echo pow(2,(4-$i));
+                    if ($i==$downCounter){
+                        echo" final";
+                    }
+                    echo" \">";
+                    for ($j = 0; $j < (count($erg["rundenid"]) / 2); $j++) {
                         rundeFuellen($erg, $j);
                     }
-                    echo "</td>";
                 }
+                $downCounter--;
+                echo "</td>";
+
+                /*
+                 if($i==1) {
+                     echo"<td class=\"round_column r_8 \">";
+                     $erg = sqlAbfrage(3);
+
+                     for ($j = 0; $j < (count($erg["rundenid"]) /2 ); $j++) {
+                         rundeFuellen($erg, $j);
+                     }
+                     echo "</td>";
+                 }
+                 if ($i == 2) {
+                     $erg = sqlAbfrage(2);
+                     echo"<td class=\"round_column r_4 \">";
+                     for ($j = 0; $j < (count($erg["rundenid"]) / 2); $j++) {
+                         rundeFuellen($erg, $j);
+                     }
+                     echo "</td>";
+                 }
+                 if ($i == 3) {
+                     $erg = sqlAbfrage(1);
+                     echo"<td class=\"round_column r_2 final \">";
+                     for ($j = 0; $j < (count($erg["rundenid"]) / 2); $j++) {
+                         rundeFuellen($erg, $j);
+                     }
+                     echo "</td>";
+                 }
+                 if ($i == 4) {
+                     $erg = sqlAbfrage(2);
+                     echo"<td class=\"round_column r_4 reversed \">";
+                     for ($j = count($erg["rundenid"]) / 2; $j < (count($erg["rundenid"])); $j++) {
+                         rundeFuellen($erg, $j);
+                     }
+                     echo "</td>";
+                 }
+                 if ($i == 5) {
+                     $erg = sqlAbfrage(3);
+                     echo"<td class=\"round_column r_8 reversed \">";
+                     for ($j = count($erg["rundenid"]) / 2; $j < (count($erg["rundenid"])); $j++) {
+                         rundeFuellen($erg, $j);
+                     }
+                     echo "</td>";
+                }
+                */
+
 
 
 
