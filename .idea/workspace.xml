@@ -2,42 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cd6d1ab-737c-49fc-8e23-a99281c9c81f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imgs/flags/Algeria.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imgs/flags/Angola.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imgs/flags/Brazil.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imgs/flags/Canada.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imgs/flags/Egypt.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imgs/flags/England.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imgs/flags/France.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imgs/flags/Germany.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imgs/flags/Ghana.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imgs/flags/Hungary.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imgs/flags/Italy.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imgs/flags/Libya.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imgs/flags/Morocco.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imgs/flags/Saudi-Arabia.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imgs/flags/Sudan.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imgs/flags/Sweden.png" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/turbierbaum.php" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/turnierbaum.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/imgs/flags/Aegypten.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/imgs/flags/Algerien.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/imgs/flags/Angola.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/imgs/flags/Brasilien.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/imgs/flags/Deutschland.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/imgs/flags/England.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/imgs/flags/Frankreich.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/imgs/flags/Ghana.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/imgs/flags/Italien.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/imgs/flags/Kanada.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/imgs/flags/Libyen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/imgs/flags/Luxemburg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/imgs/flags/Marokko.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/imgs/flags/Niederlande.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/imgs/flags/Saudi-Arabien.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/imgs/flags/Schweden.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/imgs/flags/Sudan.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/imgs/flags/Ungarn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/imgs/flags/daenemark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/imgs/flags/finnland.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/imgs/flags/norwegen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/imgs/flags/spanien.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Baumart2/jquery-3.2.1.min.js" afterPath="$PROJECT_DIR$/Baumart2/jquery-3.2.1.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PHPTEST/index.php" afterPath="$PROJECT_DIR$/PHPTEST/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PHPTEST/js/jquery-3.2.1.min.js" afterPath="$PROJECT_DIR$/PHPTEST/js/jquery-3.2.1.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/Funktionen/dbspieleabfrage_neu.php" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/Funktionen/dbspieleabfrage_neu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/Funktionen/dbspielersuche.php" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/Funktionen/dbspielersuche.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/Funktionen/dbturnierabfrage.php" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/Funktionen/dbturnierabfrage.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/css/bootstrap.css" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/spieleruebersicht.php" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/spieleruebersicht.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/spielklassen.php" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/spielklassen.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/spieluebersichtfuerspieler.php" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/spieluebersichtfuerspieler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/suchleiste.php" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/suchleiste.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/turnieruebersicht.php" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/turnieruebersicht.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/brackets.js" afterPath="$PROJECT_DIR$/js/brackets.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/brackets.min.js" afterPath="$PROJECT_DIR$/js/brackets.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jquery-1.11.3.js" afterPath="$PROJECT_DIR$/js/jquery-1.11.3.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jquery-1.11.3.min.js" afterPath="$PROJECT_DIR$/js/jquery-1.11.3.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jquery-3.2.1.min.js" afterPath="$PROJECT_DIR$/js/jquery-3.2.1.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/turnierbaum.php" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/turnierbaum.php" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -92,14 +80,14 @@
       <file leaf-file-name="spielklassen.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/spielklassen.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1991">
-              <caret line="120" column="37" lean-forward="true" selection-start-line="120" selection-start-column="37" selection-end-line="120" selection-end-column="37" />
+            <state relative-caret-position="175">
+              <caret line="95" column="63" lean-forward="true" selection-start-line="95" selection-start-column="63" selection-end-line="95" selection-end-column="63" />
               <folding>
-                <marker date="1497543159326" expanded="true" signature="597:1156" ph="SELECT spiel... spieler" />
-                <marker date="1497543159326" expanded="true" signature="1200:1418" ph="SELECT spiel... spieler" />
-                <marker date="1497543159326" expanded="true" signature="1462:1679" ph="SELECT spiel... spieler" />
-                <marker date="1497543159326" expanded="true" signature="3755:3829" ph="SELECT count... spielklasse" />
-                <marker date="1497543159326" expanded="true" signature="3916:4038" ph="select spiel... spielklasse" />
+                <marker date="1497544746597" expanded="true" signature="597:1156" ph="SELECT spiel... spieler" />
+                <marker date="1497544746597" expanded="true" signature="1200:1418" ph="SELECT spiel... spieler" />
+                <marker date="1497544746597" expanded="true" signature="1462:1679" ph="SELECT spiel... spieler" />
+                <marker date="1497544746597" expanded="true" signature="3805:3879" ph="SELECT count... spielklasse" />
+                <marker date="1497544746597" expanded="true" signature="3966:4088" ph="select spiel... spielklasse" />
               </folding>
             </state>
           </provider>
@@ -140,58 +128,59 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="turnierbaum.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="turnierbaum.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/turnierbaum.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="261" column="7" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="280" selection-end-column="0" />
+            <state relative-caret-position="102">
+              <caret line="75" column="33" lean-forward="true" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="33" />
               <folding>
-                <marker date="1497544051242" expanded="true" signature="1136:1184" ph="select spiel... spiel" />
-                <marker date="1497544051242" expanded="true" signature="1136:1233" ph="select spiel... spiel" />
-                <marker date="1497544051242" expanded="true" signature="1338:1525" ph="Select Satz1... spiel_ergebnis" />
-                <marker date="1497544051242" expanded="true" signature="1338:1541" ph="Select Satz1... spiel_ergebnis" />
-                <marker date="1497544051242" expanded="true" signature="1338:1543" ph="Select Satz1... spiel_ergebnis" />
-                <marker date="1497544051242" expanded="true" signature="1338:1590" ph="Select Satz1... spiel_ergebnis" />
-                <marker date="1497544051242" expanded="true" signature="1633:1836" ph="Select Satz1... spiel_ergebnis" />
-                <marker date="1497544051242" expanded="true" signature="1633:1885" ph="Select Satz1... spiel_ergebnis" />
-                <marker date="1497544051242" expanded="true" signature="2091:3445" ph="..." />
-                <marker date="1497544051242" expanded="true" signature="2121:3439" ph="..." />
-                <marker date="1497544051242" expanded="true" signature="2368:2660" ph="..." />
-                <marker date="1497544051242" expanded="true" signature="2445:2649" ph="..." />
-                <marker date="1497544051242" expanded="true" signature="2971:3272" ph="..." />
-                <marker date="1497544051242" expanded="true" signature="2980:3272" ph="..." />
-                <marker date="1497544051242" expanded="true" signature="3057:3264" ph="..." />
-                <marker date="1497544051242" expanded="true" signature="3219:3264" ph="..." />
-                <marker date="1497544051242" expanded="true" signature="3374:3433" ph="..." />
-                <marker date="1497544051242" expanded="true" signature="3509:3557" ph="select spiel... spiel" />
-                <marker date="1497544051242" expanded="true" signature="3509:3605" ph="select spiel... spiel" />
-                <marker date="1497544051242" expanded="true" signature="3718:3921" ph="Select Satz1... spiel_ergebnis" />
-                <marker date="1497544051242" expanded="true" signature="3718:3969" ph="Select Satz1... spiel_ergebnis" />
-                <marker date="1497544051242" expanded="true" signature="3718:3970" ph="Select Satz1... spiel_ergebnis" />
-                <marker date="1497544051242" expanded="true" signature="4020:4223" ph="Select Satz1... spiel_ergebnis" />
-                <marker date="1497544051242" expanded="true" signature="4020:4271" ph="Select Satz1... spiel_ergebnis" />
-                <marker date="1497544051242" expanded="true" signature="5780:5839" ph="..." />
-                <marker date="1497544051242" expanded="true" signature="5948:6197" ph="SELECT spiel... spieler" />
-                <marker date="1497544051242" expanded="true" signature="5948:6254" ph="SELECT spiel... spieler" />
-                <marker date="1497544051242" expanded="true" signature="6277:6477" ph="SELECT spiel... spieler" />
-                <marker date="1497544051242" expanded="true" signature="6277:6534" ph="SELECT spiel... spieler" />
-                <marker date="1497544051242" expanded="true" signature="6680:6771" ph="select spiel... spiel" />
-                <marker date="1497544051242" expanded="true" signature="6680:6773" ph="select spiel... spiel" />
-                <marker date="1497544051242" expanded="true" signature="6680:6781" ph="select spiel... spiel" />
-                <marker date="1497544051242" expanded="true" signature="6680:6782" ph="select spiel... spiel" />
-                <marker date="1497544051242" expanded="true" signature="6680:6786" ph="select spiel... spiel" />
-                <marker date="1497544051242" expanded="true" signature="6680:6807" ph="select spiel... spiel" />
-                <marker date="1497544051242" expanded="true" signature="6680:6810" ph="select spiel... spiel" />
-                <marker date="1497544051242" expanded="true" signature="6680:6830" ph="select spiel... spiel" />
-                <marker date="1497544051242" expanded="true" signature="7114:7618" ph="..." />
-                <marker date="1497544051242" expanded="true" signature="7162:7586" ph="..." />
-                <marker date="1497544051242" expanded="true" signature="7175:7569" ph="..." />
-                <marker date="1497544051242" expanded="true" signature="7192:7254" ph="..." />
-                <marker date="1497544051242" expanded="true" signature="7271:7330" ph="..." />
-                <marker date="1497544051242" expanded="true" signature="7347:7400" ph="..." />
-                <marker date="1497544051242" expanded="true" signature="7417:7476" ph="..." />
-                <marker date="1497544051242" expanded="true" signature="7493:7555" ph="..." />
-                <marker date="1497544051242" expanded="true" signature="7602:7618" ph="..." />
+                <marker date="1497545275680" expanded="true" signature="1136:1184" ph="select spiel... spiel" />
+                <marker date="1497545275680" expanded="true" signature="1136:1233" ph="select spiel... spiel" />
+                <marker date="1497545275680" expanded="true" signature="1338:1525" ph="Select Satz1... spiel_ergebnis" />
+                <marker date="1497545275680" expanded="true" signature="1338:1541" ph="Select Satz1... spiel_ergebnis" />
+                <marker date="1497545275680" expanded="true" signature="1338:1543" ph="Select Satz1... spiel_ergebnis" />
+                <marker date="1497545275680" expanded="true" signature="1338:1590" ph="Select Satz1... spiel_ergebnis" />
+                <marker date="1497545275680" expanded="true" signature="1338:1627" ph="Select Satz1... spiel_ergebnis" />
+                <marker date="1497545275680" expanded="true" signature="1668:1871" ph="Select Satz1... spiel_ergebnis" />
+                <marker date="1497545275680" expanded="true" signature="1668:1920" ph="Select Satz1... spiel_ergebnis" />
+                <marker date="1497545275680" expanded="true" signature="2126:3480" ph="..." />
+                <marker date="1497545275680" expanded="true" signature="2156:3474" ph="..." />
+                <marker date="1497545275680" expanded="true" signature="2403:2695" ph="..." />
+                <marker date="1497545275680" expanded="true" signature="2480:2684" ph="..." />
+                <marker date="1497545275680" expanded="true" signature="3006:3307" ph="..." />
+                <marker date="1497545275680" expanded="true" signature="3015:3307" ph="..." />
+                <marker date="1497545275680" expanded="true" signature="3092:3299" ph="..." />
+                <marker date="1497545275680" expanded="true" signature="3254:3299" ph="..." />
+                <marker date="1497545275680" expanded="true" signature="3409:3468" ph="..." />
+                <marker date="1497545275680" expanded="true" signature="3544:3592" ph="select spiel... spiel" />
+                <marker date="1497545275680" expanded="true" signature="3544:3640" ph="select spiel... spiel" />
+                <marker date="1497545275680" expanded="true" signature="3753:3956" ph="Select Satz1... spiel_ergebnis" />
+                <marker date="1497545275680" expanded="true" signature="3753:4004" ph="Select Satz1... spiel_ergebnis" />
+                <marker date="1497545275680" expanded="true" signature="3753:4005" ph="Select Satz1... spiel_ergebnis" />
+                <marker date="1497545275680" expanded="true" signature="4055:4258" ph="Select Satz1... spiel_ergebnis" />
+                <marker date="1497545275680" expanded="true" signature="4055:4306" ph="Select Satz1... spiel_ergebnis" />
+                <marker date="1497545275680" expanded="true" signature="5815:5874" ph="..." />
+                <marker date="1497545275680" expanded="true" signature="5983:6232" ph="SELECT spiel... spieler" />
+                <marker date="1497545275680" expanded="true" signature="5983:6289" ph="SELECT spiel... spieler" />
+                <marker date="1497545275680" expanded="true" signature="6312:6512" ph="SELECT spiel... spieler" />
+                <marker date="1497545275680" expanded="true" signature="6312:6569" ph="SELECT spiel... spieler" />
+                <marker date="1497545275680" expanded="true" signature="6715:6806" ph="select spiel... spiel" />
+                <marker date="1497545275680" expanded="true" signature="6715:6808" ph="select spiel... spiel" />
+                <marker date="1497545275680" expanded="true" signature="6715:6816" ph="select spiel... spiel" />
+                <marker date="1497545275680" expanded="true" signature="6715:6817" ph="select spiel... spiel" />
+                <marker date="1497545275680" expanded="true" signature="6715:6821" ph="select spiel... spiel" />
+                <marker date="1497545275680" expanded="true" signature="6715:6842" ph="select spiel... spiel" />
+                <marker date="1497545275680" expanded="true" signature="6715:6845" ph="select spiel... spiel" />
+                <marker date="1497545275680" expanded="true" signature="6715:6865" ph="select spiel... spiel" />
+                <marker date="1497545275680" expanded="true" signature="7149:7653" ph="..." />
+                <marker date="1497545275680" expanded="true" signature="7197:7621" ph="..." />
+                <marker date="1497545275680" expanded="true" signature="7210:7604" ph="..." />
+                <marker date="1497545275680" expanded="true" signature="7227:7289" ph="..." />
+                <marker date="1497545275680" expanded="true" signature="7306:7365" ph="..." />
+                <marker date="1497545275680" expanded="true" signature="7382:7435" ph="..." />
+                <marker date="1497545275680" expanded="true" signature="7452:7511" ph="..." />
+                <marker date="1497545275680" expanded="true" signature="7528:7590" ph="..." />
+                <marker date="1497545275680" expanded="true" signature="7637:7653" ph="..." />
               </folding>
             </state>
           </provider>
@@ -220,10 +209,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="1.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="1.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/1.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
+            <state relative-caret-position="442">
               <caret line="26" column="16" lean-forward="true" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
               <folding />
             </state>
@@ -255,9 +244,10 @@
       <find>name</find>
       <find>.png</find>
       <find>arra</find>
-      <find>TurnierAllSuche</find>
       <find>ergebnis</find>
       <find>SpielerSuche</find>
+      <find>TurnierAllSuche</find>
+      <find>href</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -285,12 +275,12 @@
         <option value="$PROJECT_DIR$/Projekt_FUNKTIONIERT/Funktionen/dbspieleabfrage_neu.php" />
         <option value="$PROJECT_DIR$/Projekt_FUNKTIONIERT/Funktionen/dbspielersuche.php" />
         <option value="$PROJECT_DIR$/Projekt_FUNKTIONIERT/spieluebersichtfuerspieler.php" />
-        <option value="$PROJECT_DIR$/Projekt_FUNKTIONIERT/turnierbaum.php" />
         <option value="$PROJECT_DIR$/Projekt_FUNKTIONIERT/turnieruebersicht.php" />
-        <option value="$PROJECT_DIR$/Projekt_FUNKTIONIERT/spielklassen.php" />
         <option value="$PROJECT_DIR$/Projekt_FUNKTIONIERT/spieleruebersicht.php" />
         <option value="$PROJECT_DIR$/Projekt_FUNKTIONIERT/spieleruebersicht_neu.php" />
         <option value="$PROJECT_DIR$/Projekt_FUNKTIONIERT/1.php" />
+        <option value="$PROJECT_DIR$/Projekt_FUNKTIONIERT/spielklassen.php" />
+        <option value="$PROJECT_DIR$/Projekt_FUNKTIONIERT/turnierbaum.php" />
       </list>
     </option>
   </component>
@@ -348,6 +338,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Projekt_FUNKTIONIERT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Turnierverwaltung-Website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Turnierverwaltung-Website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Projekt_FUNKTIONIERT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="imgs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flags" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -834,7 +846,7 @@
       <workItem from="1497452037374" duration="71000" />
       <workItem from="1497452146680" duration="10919000" />
       <workItem from="1497465216953" duration="18550000" />
-      <workItem from="1497517515186" duration="26774000" />
+      <workItem from="1497517515186" duration="27663000" />
     </task>
     <task id="LOCAL-00001" summary="1:44">
       <created>1497483856700</created>
@@ -850,11 +862,25 @@
       <option name="project" value="LOCAL" />
       <updated>1497524579498</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1:44">
+      <created>1497544449544</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1497544449544</updated>
+    </task>
+    <task id="LOCAL-00004" summary="testttetst">
+      <created>1497545018991</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1497545018991</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56314000" />
+    <option name="totallyTimeSpent" value="57203000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -932,7 +958,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1:44" />
-    <option name="LAST_COMMIT_MESSAGE" value="1:44" />
+    <MESSAGE value="testttetst" />
+    <option name="LAST_COMMIT_MESSAGE" value="testttetst" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -965,11 +992,11 @@
         <state relative-caret-position="731">
           <caret line="43" column="29" lean-forward="true" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
           <folding>
-            <marker date="1497543159326" expanded="true" signature="597:1156" ph="SELECT spiel... spieler" />
-            <marker date="1497543159326" expanded="true" signature="1200:1418" ph="SELECT spiel... spieler" />
-            <marker date="1497543159326" expanded="true" signature="1462:1679" ph="SELECT spiel... spieler" />
-            <marker date="1497543159326" expanded="true" signature="3755:3829" ph="SELECT count... spielklasse" />
-            <marker date="1497543159326" expanded="true" signature="3916:4038" ph="select spiel... spielklasse" />
+            <marker date="1497544746597" expanded="true" signature="597:1156" ph="SELECT spiel... spieler" />
+            <marker date="1497544746597" expanded="true" signature="1200:1418" ph="SELECT spiel... spieler" />
+            <marker date="1497544746597" expanded="true" signature="1462:1679" ph="SELECT spiel... spieler" />
+            <marker date="1497544746597" expanded="true" signature="3805:3879" ph="SELECT count... spielklasse" />
+            <marker date="1497544746597" expanded="true" signature="3966:4088" ph="select spiel... spielklasse" />
           </folding>
         </state>
       </provider>
@@ -1021,52 +1048,53 @@
         <state relative-caret-position="1173">
           <caret line="69" column="46" lean-forward="false" selection-start-line="69" selection-start-column="46" selection-end-line="69" selection-end-column="46" />
           <folding>
-            <marker date="1497544051242" expanded="true" signature="1136:1184" ph="select spiel... spiel" />
-            <marker date="1497544051242" expanded="true" signature="1136:1233" ph="select spiel... spiel" />
-            <marker date="1497544051242" expanded="true" signature="1338:1525" ph="Select Satz1... spiel_ergebnis" />
-            <marker date="1497544051242" expanded="true" signature="1338:1541" ph="Select Satz1... spiel_ergebnis" />
-            <marker date="1497544051242" expanded="true" signature="1338:1543" ph="Select Satz1... spiel_ergebnis" />
-            <marker date="1497544051242" expanded="true" signature="1338:1590" ph="Select Satz1... spiel_ergebnis" />
-            <marker date="1497544051242" expanded="true" signature="1633:1836" ph="Select Satz1... spiel_ergebnis" />
-            <marker date="1497544051242" expanded="true" signature="1633:1885" ph="Select Satz1... spiel_ergebnis" />
-            <marker date="1497544051242" expanded="true" signature="2091:3445" ph="..." />
-            <marker date="1497544051242" expanded="true" signature="2121:3439" ph="..." />
-            <marker date="1497544051242" expanded="true" signature="2368:2660" ph="..." />
-            <marker date="1497544051242" expanded="true" signature="2445:2649" ph="..." />
-            <marker date="1497544051242" expanded="true" signature="2971:3272" ph="..." />
-            <marker date="1497544051242" expanded="true" signature="2980:3272" ph="..." />
-            <marker date="1497544051242" expanded="true" signature="3057:3264" ph="..." />
-            <marker date="1497544051242" expanded="true" signature="3219:3264" ph="..." />
-            <marker date="1497544051242" expanded="true" signature="3374:3433" ph="..." />
-            <marker date="1497544051242" expanded="true" signature="3509:3557" ph="select spiel... spiel" />
-            <marker date="1497544051242" expanded="true" signature="3509:3605" ph="select spiel... spiel" />
-            <marker date="1497544051242" expanded="true" signature="3718:3921" ph="Select Satz1... spiel_ergebnis" />
-            <marker date="1497544051242" expanded="true" signature="3718:3969" ph="Select Satz1... spiel_ergebnis" />
-            <marker date="1497544051242" expanded="true" signature="3718:3970" ph="Select Satz1... spiel_ergebnis" />
-            <marker date="1497544051242" expanded="true" signature="4020:4223" ph="Select Satz1... spiel_ergebnis" />
-            <marker date="1497544051242" expanded="true" signature="4020:4271" ph="Select Satz1... spiel_ergebnis" />
-            <marker date="1497544051242" expanded="true" signature="5780:5839" ph="..." />
-            <marker date="1497544051242" expanded="true" signature="5948:6197" ph="SELECT spiel... spieler" />
-            <marker date="1497544051242" expanded="true" signature="5948:6254" ph="SELECT spiel... spieler" />
-            <marker date="1497544051242" expanded="true" signature="6277:6477" ph="SELECT spiel... spieler" />
-            <marker date="1497544051242" expanded="true" signature="6277:6534" ph="SELECT spiel... spieler" />
-            <marker date="1497544051242" expanded="true" signature="6680:6771" ph="select spiel... spiel" />
-            <marker date="1497544051242" expanded="true" signature="6680:6773" ph="select spiel... spiel" />
-            <marker date="1497544051242" expanded="true" signature="6680:6781" ph="select spiel... spiel" />
-            <marker date="1497544051242" expanded="true" signature="6680:6782" ph="select spiel... spiel" />
-            <marker date="1497544051242" expanded="true" signature="6680:6786" ph="select spiel... spiel" />
-            <marker date="1497544051242" expanded="true" signature="6680:6807" ph="select spiel... spiel" />
-            <marker date="1497544051242" expanded="true" signature="6680:6810" ph="select spiel... spiel" />
-            <marker date="1497544051242" expanded="true" signature="6680:6830" ph="select spiel... spiel" />
-            <marker date="1497544051242" expanded="true" signature="7114:7618" ph="..." />
-            <marker date="1497544051242" expanded="true" signature="7162:7586" ph="..." />
-            <marker date="1497544051242" expanded="true" signature="7175:7569" ph="..." />
-            <marker date="1497544051242" expanded="true" signature="7192:7254" ph="..." />
-            <marker date="1497544051242" expanded="true" signature="7271:7330" ph="..." />
-            <marker date="1497544051242" expanded="true" signature="7347:7400" ph="..." />
-            <marker date="1497544051242" expanded="true" signature="7417:7476" ph="..." />
-            <marker date="1497544051242" expanded="true" signature="7493:7555" ph="..." />
-            <marker date="1497544051242" expanded="true" signature="7602:7618" ph="..." />
+            <marker date="1497545275680" expanded="true" signature="1136:1184" ph="select spiel... spiel" />
+            <marker date="1497545275680" expanded="true" signature="1136:1233" ph="select spiel... spiel" />
+            <marker date="1497545275680" expanded="true" signature="1338:1525" ph="Select Satz1... spiel_ergebnis" />
+            <marker date="1497545275680" expanded="true" signature="1338:1541" ph="Select Satz1... spiel_ergebnis" />
+            <marker date="1497545275680" expanded="true" signature="1338:1543" ph="Select Satz1... spiel_ergebnis" />
+            <marker date="1497545275680" expanded="true" signature="1338:1590" ph="Select Satz1... spiel_ergebnis" />
+            <marker date="1497545275680" expanded="true" signature="1338:1627" ph="Select Satz1... spiel_ergebnis" />
+            <marker date="1497545275680" expanded="true" signature="1668:1871" ph="Select Satz1... spiel_ergebnis" />
+            <marker date="1497545275680" expanded="true" signature="1668:1920" ph="Select Satz1... spiel_ergebnis" />
+            <marker date="1497545275680" expanded="true" signature="2126:3480" ph="..." />
+            <marker date="1497545275680" expanded="true" signature="2156:3474" ph="..." />
+            <marker date="1497545275680" expanded="true" signature="2403:2695" ph="..." />
+            <marker date="1497545275680" expanded="true" signature="2480:2684" ph="..." />
+            <marker date="1497545275680" expanded="true" signature="3006:3307" ph="..." />
+            <marker date="1497545275680" expanded="true" signature="3015:3307" ph="..." />
+            <marker date="1497545275680" expanded="true" signature="3092:3299" ph="..." />
+            <marker date="1497545275680" expanded="true" signature="3254:3299" ph="..." />
+            <marker date="1497545275680" expanded="true" signature="3409:3468" ph="..." />
+            <marker date="1497545275680" expanded="true" signature="3544:3592" ph="select spiel... spiel" />
+            <marker date="1497545275680" expanded="true" signature="3544:3640" ph="select spiel... spiel" />
+            <marker date="1497545275680" expanded="true" signature="3753:3956" ph="Select Satz1... spiel_ergebnis" />
+            <marker date="1497545275680" expanded="true" signature="3753:4004" ph="Select Satz1... spiel_ergebnis" />
+            <marker date="1497545275680" expanded="true" signature="3753:4005" ph="Select Satz1... spiel_ergebnis" />
+            <marker date="1497545275680" expanded="true" signature="4055:4258" ph="Select Satz1... spiel_ergebnis" />
+            <marker date="1497545275680" expanded="true" signature="4055:4306" ph="Select Satz1... spiel_ergebnis" />
+            <marker date="1497545275680" expanded="true" signature="5815:5874" ph="..." />
+            <marker date="1497545275680" expanded="true" signature="5983:6232" ph="SELECT spiel... spieler" />
+            <marker date="1497545275680" expanded="true" signature="5983:6289" ph="SELECT spiel... spieler" />
+            <marker date="1497545275680" expanded="true" signature="6312:6512" ph="SELECT spiel... spieler" />
+            <marker date="1497545275680" expanded="true" signature="6312:6569" ph="SELECT spiel... spieler" />
+            <marker date="1497545275680" expanded="true" signature="6715:6806" ph="select spiel... spiel" />
+            <marker date="1497545275680" expanded="true" signature="6715:6808" ph="select spiel... spiel" />
+            <marker date="1497545275680" expanded="true" signature="6715:6816" ph="select spiel... spiel" />
+            <marker date="1497545275680" expanded="true" signature="6715:6817" ph="select spiel... spiel" />
+            <marker date="1497545275680" expanded="true" signature="6715:6821" ph="select spiel... spiel" />
+            <marker date="1497545275680" expanded="true" signature="6715:6842" ph="select spiel... spiel" />
+            <marker date="1497545275680" expanded="true" signature="6715:6845" ph="select spiel... spiel" />
+            <marker date="1497545275680" expanded="true" signature="6715:6865" ph="select spiel... spiel" />
+            <marker date="1497545275680" expanded="true" signature="7149:7653" ph="..." />
+            <marker date="1497545275680" expanded="true" signature="7197:7621" ph="..." />
+            <marker date="1497545275680" expanded="true" signature="7210:7604" ph="..." />
+            <marker date="1497545275680" expanded="true" signature="7227:7289" ph="..." />
+            <marker date="1497545275680" expanded="true" signature="7306:7365" ph="..." />
+            <marker date="1497545275680" expanded="true" signature="7382:7435" ph="..." />
+            <marker date="1497545275680" expanded="true" signature="7452:7511" ph="..." />
+            <marker date="1497545275680" expanded="true" signature="7528:7590" ph="..." />
+            <marker date="1497545275680" expanded="true" signature="7637:7653" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1092,11 +1120,11 @@
         <state relative-caret-position="2312">
           <caret line="136" column="13" lean-forward="true" selection-start-line="124" selection-start-column="12" selection-end-line="136" selection-end-column="13" />
           <folding>
-            <marker date="1497543159326" expanded="true" signature="597:1156" ph="SELECT spiel... spieler" />
-            <marker date="1497543159326" expanded="true" signature="1200:1418" ph="SELECT spiel... spieler" />
-            <marker date="1497543159326" expanded="true" signature="1462:1679" ph="SELECT spiel... spieler" />
-            <marker date="1497543159326" expanded="true" signature="3755:3829" ph="SELECT count... spielklasse" />
-            <marker date="1497543159326" expanded="true" signature="3916:4038" ph="select spiel... spielklasse" />
+            <marker date="1497544746597" expanded="true" signature="597:1156" ph="SELECT spiel... spieler" />
+            <marker date="1497544746597" expanded="true" signature="1200:1418" ph="SELECT spiel... spieler" />
+            <marker date="1497544746597" expanded="true" signature="1462:1679" ph="SELECT spiel... spieler" />
+            <marker date="1497544746597" expanded="true" signature="3805:3879" ph="SELECT count... spielklasse" />
+            <marker date="1497544746597" expanded="true" signature="3966:4088" ph="select spiel... spielklasse" />
           </folding>
         </state>
       </provider>
@@ -1206,14 +1234,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/suchleiste.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="18" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/Unbenannt-1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-765">
@@ -1260,14 +1280,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/84a7f12c-5fa6-4d68-9071-15257c37c130/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/spieluebersichtfuerspieler.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1285,85 +1297,6 @@
             <marker date="1497544048528" expanded="true" signature="2300:2537" ph="SELECT spiel... spieler" />
             <marker date="1497544048528" expanded="true" signature="2300:2539" ph="SELECT spiel... spieler" />
             <marker date="1497544048528" expanded="true" signature="4977:5112" ph="SELECT Spiel... spiel" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/turnierbaum.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="261" column="7" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="280" selection-end-column="0" />
-          <folding>
-            <marker date="1497544051242" expanded="true" signature="1136:1184" ph="select spiel... spiel" />
-            <marker date="1497544051242" expanded="true" signature="1136:1233" ph="select spiel... spiel" />
-            <marker date="1497544051242" expanded="true" signature="1338:1525" ph="Select Satz1... spiel_ergebnis" />
-            <marker date="1497544051242" expanded="true" signature="1338:1541" ph="Select Satz1... spiel_ergebnis" />
-            <marker date="1497544051242" expanded="true" signature="1338:1543" ph="Select Satz1... spiel_ergebnis" />
-            <marker date="1497544051242" expanded="true" signature="1338:1590" ph="Select Satz1... spiel_ergebnis" />
-            <marker date="1497544051242" expanded="true" signature="1633:1836" ph="Select Satz1... spiel_ergebnis" />
-            <marker date="1497544051242" expanded="true" signature="1633:1885" ph="Select Satz1... spiel_ergebnis" />
-            <marker date="1497544051242" expanded="true" signature="2091:3445" ph="..." />
-            <marker date="1497544051242" expanded="true" signature="2121:3439" ph="..." />
-            <marker date="1497544051242" expanded="true" signature="2368:2660" ph="..." />
-            <marker date="1497544051242" expanded="true" signature="2445:2649" ph="..." />
-            <marker date="1497544051242" expanded="true" signature="2971:3272" ph="..." />
-            <marker date="1497544051242" expanded="true" signature="2980:3272" ph="..." />
-            <marker date="1497544051242" expanded="true" signature="3057:3264" ph="..." />
-            <marker date="1497544051242" expanded="true" signature="3219:3264" ph="..." />
-            <marker date="1497544051242" expanded="true" signature="3374:3433" ph="..." />
-            <marker date="1497544051242" expanded="true" signature="3509:3557" ph="select spiel... spiel" />
-            <marker date="1497544051242" expanded="true" signature="3509:3605" ph="select spiel... spiel" />
-            <marker date="1497544051242" expanded="true" signature="3718:3921" ph="Select Satz1... spiel_ergebnis" />
-            <marker date="1497544051242" expanded="true" signature="3718:3969" ph="Select Satz1... spiel_ergebnis" />
-            <marker date="1497544051242" expanded="true" signature="3718:3970" ph="Select Satz1... spiel_ergebnis" />
-            <marker date="1497544051242" expanded="true" signature="4020:4223" ph="Select Satz1... spiel_ergebnis" />
-            <marker date="1497544051242" expanded="true" signature="4020:4271" ph="Select Satz1... spiel_ergebnis" />
-            <marker date="1497544051242" expanded="true" signature="5780:5839" ph="..." />
-            <marker date="1497544051242" expanded="true" signature="5948:6197" ph="SELECT spiel... spieler" />
-            <marker date="1497544051242" expanded="true" signature="5948:6254" ph="SELECT spiel... spieler" />
-            <marker date="1497544051242" expanded="true" signature="6277:6477" ph="SELECT spiel... spieler" />
-            <marker date="1497544051242" expanded="true" signature="6277:6534" ph="SELECT spiel... spieler" />
-            <marker date="1497544051242" expanded="true" signature="6680:6771" ph="select spiel... spiel" />
-            <marker date="1497544051242" expanded="true" signature="6680:6773" ph="select spiel... spiel" />
-            <marker date="1497544051242" expanded="true" signature="6680:6781" ph="select spiel... spiel" />
-            <marker date="1497544051242" expanded="true" signature="6680:6782" ph="select spiel... spiel" />
-            <marker date="1497544051242" expanded="true" signature="6680:6786" ph="select spiel... spiel" />
-            <marker date="1497544051242" expanded="true" signature="6680:6807" ph="select spiel... spiel" />
-            <marker date="1497544051242" expanded="true" signature="6680:6810" ph="select spiel... spiel" />
-            <marker date="1497544051242" expanded="true" signature="6680:6830" ph="select spiel... spiel" />
-            <marker date="1497544051242" expanded="true" signature="7114:7618" ph="..." />
-            <marker date="1497544051242" expanded="true" signature="7162:7586" ph="..." />
-            <marker date="1497544051242" expanded="true" signature="7175:7569" ph="..." />
-            <marker date="1497544051242" expanded="true" signature="7192:7254" ph="..." />
-            <marker date="1497544051242" expanded="true" signature="7271:7330" ph="..." />
-            <marker date="1497544051242" expanded="true" signature="7347:7400" ph="..." />
-            <marker date="1497544051242" expanded="true" signature="7417:7476" ph="..." />
-            <marker date="1497544051242" expanded="true" signature="7493:7555" ph="..." />
-            <marker date="1497544051242" expanded="true" signature="7602:7618" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/turnieruebersicht.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-542">
-          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-          <folding>
-            <marker date="1497543159377" expanded="true" signature="1041:1329" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/spielklassen.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1991">
-          <caret line="120" column="37" lean-forward="true" selection-start-line="120" selection-start-column="37" selection-end-line="120" selection-end-column="37" />
-          <folding>
-            <marker date="1497543159326" expanded="true" signature="597:1156" ph="SELECT spiel... spieler" />
-            <marker date="1497543159326" expanded="true" signature="1200:1418" ph="SELECT spiel... spieler" />
-            <marker date="1497543159326" expanded="true" signature="1462:1679" ph="SELECT spiel... spieler" />
-            <marker date="1497543159326" expanded="true" signature="3755:3829" ph="SELECT count... spielklasse" />
-            <marker date="1497543159326" expanded="true" signature="3916:4038" ph="select spiel... spielklasse" />
           </folding>
         </state>
       </provider>
@@ -1394,11 +1327,107 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/84a7f12c-5fa6-4d68-9071-15257c37c130/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/1.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
+        <state relative-caret-position="442">
           <caret line="26" column="16" lean-forward="true" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/turnieruebersicht.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-542">
+          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+          <folding>
+            <marker date="1497543159377" expanded="true" signature="1041:1329" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/suchleiste.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/spielklassen.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="95" column="63" lean-forward="true" selection-start-line="95" selection-start-column="63" selection-end-line="95" selection-end-column="63" />
+          <folding>
+            <marker date="1497544746597" expanded="true" signature="597:1156" ph="SELECT spiel... spieler" />
+            <marker date="1497544746597" expanded="true" signature="1200:1418" ph="SELECT spiel... spieler" />
+            <marker date="1497544746597" expanded="true" signature="1462:1679" ph="SELECT spiel... spieler" />
+            <marker date="1497544746597" expanded="true" signature="3805:3879" ph="SELECT count... spielklasse" />
+            <marker date="1497544746597" expanded="true" signature="3966:4088" ph="select spiel... spielklasse" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/turnierbaum.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="75" column="33" lean-forward="true" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="33" />
+          <folding>
+            <marker date="1497545275680" expanded="true" signature="1136:1184" ph="select spiel... spiel" />
+            <marker date="1497545275680" expanded="true" signature="1136:1233" ph="select spiel... spiel" />
+            <marker date="1497545275680" expanded="true" signature="1338:1525" ph="Select Satz1... spiel_ergebnis" />
+            <marker date="1497545275680" expanded="true" signature="1338:1541" ph="Select Satz1... spiel_ergebnis" />
+            <marker date="1497545275680" expanded="true" signature="1338:1543" ph="Select Satz1... spiel_ergebnis" />
+            <marker date="1497545275680" expanded="true" signature="1338:1590" ph="Select Satz1... spiel_ergebnis" />
+            <marker date="1497545275680" expanded="true" signature="1338:1627" ph="Select Satz1... spiel_ergebnis" />
+            <marker date="1497545275680" expanded="true" signature="1668:1871" ph="Select Satz1... spiel_ergebnis" />
+            <marker date="1497545275680" expanded="true" signature="1668:1920" ph="Select Satz1... spiel_ergebnis" />
+            <marker date="1497545275680" expanded="true" signature="2126:3480" ph="..." />
+            <marker date="1497545275680" expanded="true" signature="2156:3474" ph="..." />
+            <marker date="1497545275680" expanded="true" signature="2403:2695" ph="..." />
+            <marker date="1497545275680" expanded="true" signature="2480:2684" ph="..." />
+            <marker date="1497545275680" expanded="true" signature="3006:3307" ph="..." />
+            <marker date="1497545275680" expanded="true" signature="3015:3307" ph="..." />
+            <marker date="1497545275680" expanded="true" signature="3092:3299" ph="..." />
+            <marker date="1497545275680" expanded="true" signature="3254:3299" ph="..." />
+            <marker date="1497545275680" expanded="true" signature="3409:3468" ph="..." />
+            <marker date="1497545275680" expanded="true" signature="3544:3592" ph="select spiel... spiel" />
+            <marker date="1497545275680" expanded="true" signature="3544:3640" ph="select spiel... spiel" />
+            <marker date="1497545275680" expanded="true" signature="3753:3956" ph="Select Satz1... spiel_ergebnis" />
+            <marker date="1497545275680" expanded="true" signature="3753:4004" ph="Select Satz1... spiel_ergebnis" />
+            <marker date="1497545275680" expanded="true" signature="3753:4005" ph="Select Satz1... spiel_ergebnis" />
+            <marker date="1497545275680" expanded="true" signature="4055:4258" ph="Select Satz1... spiel_ergebnis" />
+            <marker date="1497545275680" expanded="true" signature="4055:4306" ph="Select Satz1... spiel_ergebnis" />
+            <marker date="1497545275680" expanded="true" signature="5815:5874" ph="..." />
+            <marker date="1497545275680" expanded="true" signature="5983:6232" ph="SELECT spiel... spieler" />
+            <marker date="1497545275680" expanded="true" signature="5983:6289" ph="SELECT spiel... spieler" />
+            <marker date="1497545275680" expanded="true" signature="6312:6512" ph="SELECT spiel... spieler" />
+            <marker date="1497545275680" expanded="true" signature="6312:6569" ph="SELECT spiel... spieler" />
+            <marker date="1497545275680" expanded="true" signature="6715:6806" ph="select spiel... spiel" />
+            <marker date="1497545275680" expanded="true" signature="6715:6808" ph="select spiel... spiel" />
+            <marker date="1497545275680" expanded="true" signature="6715:6816" ph="select spiel... spiel" />
+            <marker date="1497545275680" expanded="true" signature="6715:6817" ph="select spiel... spiel" />
+            <marker date="1497545275680" expanded="true" signature="6715:6821" ph="select spiel... spiel" />
+            <marker date="1497545275680" expanded="true" signature="6715:6842" ph="select spiel... spiel" />
+            <marker date="1497545275680" expanded="true" signature="6715:6845" ph="select spiel... spiel" />
+            <marker date="1497545275680" expanded="true" signature="6715:6865" ph="select spiel... spiel" />
+            <marker date="1497545275680" expanded="true" signature="7149:7653" ph="..." />
+            <marker date="1497545275680" expanded="true" signature="7197:7621" ph="..." />
+            <marker date="1497545275680" expanded="true" signature="7210:7604" ph="..." />
+            <marker date="1497545275680" expanded="true" signature="7227:7289" ph="..." />
+            <marker date="1497545275680" expanded="true" signature="7306:7365" ph="..." />
+            <marker date="1497545275680" expanded="true" signature="7382:7435" ph="..." />
+            <marker date="1497545275680" expanded="true" signature="7452:7511" ph="..." />
+            <marker date="1497545275680" expanded="true" signature="7528:7590" ph="..." />
+            <marker date="1497545275680" expanded="true" signature="7637:7653" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

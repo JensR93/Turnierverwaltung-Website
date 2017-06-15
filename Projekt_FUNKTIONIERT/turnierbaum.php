@@ -38,7 +38,7 @@ function rundeFuellen($erg,$j){
     $spielklasse = $_GET['spielklasse'];
     $siegerabfrage = "select spiel.SiegerID from spiel where RundenID=".$erg["rundenid"][$j]." and spiel.SpielklasseID=".$spielklasse;
     $sieger = SpieleTabelleErzeugen($siegerabfrage,"sieger");
-    $ergebnisgastabfrage ="Select Satz1_gast as satz1, Satz2_gast as satz2, Satz3_gast as satz3, Satz4_gast as satz4, Satz5_gast as satz5 from spiel_ergebnis inner join spiel on spiel.SpielID=spiel_ergebnis.SpielID where RundenID=".$erg["rundenid"][$j]." and spiel.SpielklasseID=".$spielklasse;
+    $ergebnisgastabfrage ="Select Satz1_gast as satz1, Satz2_gast as satz2, Satz3_gast as satz3, Satz4_gast as satz4, Satz5_gast as satz5 from spiel_ergebnis inner join spiel on spiel.SpielID=spiel_ergebnis.SpielID where RundenID=".$erg["rundenid"][$j]." and spiel.SpielklasseID=".$spielklasse." and spiel.TurnierID=".$turnierid;
     $ergebnisheimabfrage ="Select Satz1_heim as satz1, Satz2_heim as satz2, Satz3_heim as satz3, Satz4_heim as satz4, Satz5_heim as satz5 from spiel_ergebnis inner join spiel on spiel.SpielID=spiel_ergebnis.SpielID where RundenID=".$erg["rundenid"][$j]." and spiel.SpielklasseID=".$spielklasse;
     $ergebnisgast = SpieleTabelleErzeugen($ergebnisgastabfrage,"ergebnis");
     $ergebnisheim = SpieleTabelleErzeugen($ergebnisheimabfrage,"ergebnis");
