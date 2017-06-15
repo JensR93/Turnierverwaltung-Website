@@ -25,7 +25,7 @@
     }
     echo "php end";
 
-    mysqli_query( $con , "INSERT INTO users values ( 'id' , 'smith' , 'joe' , 'joepass' )");
+    mysqli_query( $con , "INSERT INTO users values ( KompletterNamepletterName' , 'smith' , 'joe' , 'joepass' )");
 
     mysqli_close($con);
 

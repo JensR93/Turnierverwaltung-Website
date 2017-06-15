@@ -35,7 +35,6 @@ function SpielerSuche($vorname,$nachname,$page)
         $ergebnis[$i][4]=$row[5];
         $ergebnis[$i][5]=$row[6].":".$row[7].":".$row[8];
         $ergebnis[$i][6]=$row[9];
-
         $ergebnis[$i][7]=$row[10].":".$row[12];
         $ergebnis[$i][8]=$row[11];
         $ergebnis[$i][9]=$row[13].":".$row[14];
@@ -62,8 +61,8 @@ function IDSuche($id)
     $pdo = new PDO('mysql:host=localhost;dbname=turnierverwaltung', $user, $pw);
 
 
-    $statement = $pdo->prepare("SELECT * FROM spieler WHERE SpielerID = :id");
-    $statement->execute(array('id' => $id));
+    $statement = $pdo->prepare("SELECT * FROM spieler WHERE SpielerID = :KompletterName");
+    $statement->execute(array('KompletterName' => $id));
     $i=0;
     while ($row = $statement->fetch()) {
         //echo $row[0] . " " . $row[1] . "<br />";

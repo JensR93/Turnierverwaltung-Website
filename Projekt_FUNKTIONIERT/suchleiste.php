@@ -12,6 +12,11 @@
     <label for="nname">Nachname:
         <input id="nname" name="nname">
     </label>
+    <select name="suchauswahl" id="suchauswahl">
+        <option value="1">Turniere</option>
+        <option value="2">Spieler</option>
+
+    </select>
 
     <input type="submit" value="senden" >
 </form>

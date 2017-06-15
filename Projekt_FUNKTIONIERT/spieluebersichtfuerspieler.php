@@ -1,6 +1,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="css/bootstrap.css">
+
 </head>
 <body>
 <?php
@@ -13,9 +14,9 @@
 
  */
 include "1.php";
+include "Funktionen/dbspieleabfrage_neu.php";
     ?>
     <table border="1">
-        <th>SpielID</th><th>Aufrufzeit</th><th>Schiedsrichter</th><th>Heim</th><th>Gast</th><th>Sieger</th><th>SpielklasseID</th>
         <?php
         $turniere = SpielerIDSpielSuche();
         for ($i = 0; $i < count($turniere); $i++) {
@@ -47,14 +48,83 @@ include "1.php";
 function SpielerIDSpielSuche()
 {
     include 'Funktionen/dblogin.php';
+    if(isset($_GET['spielerid'])) {
+        $turnierid=$_GET['turnierid'];
+        $spielerid=$_GET['spielerid'];
 
-    if(isset($_GET['spielerid']))
+        $joinabfrage = "SELECT  spieler.SpielerID, spieler.VName AS gast_vname, spieler.NName AS gast_nname, spiel.Feld, spiel.AufrufZeit, spiel_ergebnis.Satz1_heim, spiel_ergebnis.Satz1_gast,
+    spiel_ergebnis.Satz2_heim, spiel_ergebnis.Satz2_gast, spiel_ergebnis.Satz3_heim, spiel_ergebnis.Satz3_gast, spielklasse.Disziplin, 
+    spielklasse.Niveau FROM spieler INNER JOIN spiel ON spieler.SpielerID=spiel.Gast INNER JOIN spiel_ergebnis ON spiel.SpielID=spiel_ergebnis.SpielID 
+    INNER JOIN spielklasse on spiel.SpielklasseID=spielklasse.SpielklasseID Where spiel.Heim=".$spielerid." or spiel.gast=".$spielerid;
+        $gastabfrage = "SELECT  spieler.SpielerID, spieler.VName AS gast_vname, spieler.NName AS gast_nname, spieler.Nationalitaet AS Nationalitaet  From spieler 
+    INNER JOIN spiel ON spieler.SpielerID=spiel.Gast Where spiel.Heim=".$spielerid." or spiel.gast=".$spielerid;
+        $heimabfrage = "SELECT  spieler.SpielerID, spieler.VName AS heim_vname, spieler.NName AS heim_nname, spieler.Nationalitaet AS Nationalitaet From spieler 
+    INNER JOIN spiel ON spieler.SpielerID=spiel.Heim Where spiel.Heim=".$spielerid." or spiel.gast=".$spielerid;
+
+        /*
+        echo "<br>".$joinabfrage;
+        echo "<br>".$gastabfrage;
+        echo "<br>".$heimabfrage;
+        */
+        $gast = SpieleTabelleErzeugen($gastabfrage, "gast");
+        $heim = SpieleTabelleErzeugen($heimabfrage, "heim");
+        $join = SpieleTabelleErzeugen($joinabfrage, "");
+        $ergebnis = array_merge($gast, $heim, $join);
+        if ($join) {
+            ?>
+
+
+            <table class="allspielklasse" border="1">
+            <th>Aufrufzeit</th>
+            <th>DisziplinNiveau</th>
+            <th>Heim</th>
+            <th>Gast</th>
+            <th>Ergebnis</th>
+
+            <?php
+
+
+            for ($i = 0; $i < count($join["aufrufzeit"]); $i++) {
+                echo "<tr>";
+
+                echo "<td>" . $ergebnis["aufrufzeit"][$i] . "</td>";
+                echo "<td>" . $ergebnis["disziplinniveau"][$i] . "</td>";
+
+                echo "<td class='HeimTable'>";
+
+                echo"<a href=spieleruebersicht.php?spielerid=" . $ergebnis["heimid"][$i] . ">" . $ergebnis["heim"][$i];
+                if($ergebnis["land_heim"][$i]!=Null){
+                    echo "<img src=\"imgs/flags/".$ergebnis["land_heim"][$i].".png\" alt=\"".$ergebnis["land_heim"][$i]."\"/>";
+                }
+
+                echo     "</td>";
+                echo "<td class='GastTable'>";
+                if($ergebnis["land_gast"][$i]!=Null){
+                    echo "<img src=\"imgs/flags/".$ergebnis["land_gast"][$i].".png\" alt=\"".$ergebnis["land_gast"][$i]."\"/>";
+                }
+                echo"<a href=spieleruebersicht.php?spielerid=" . $ergebnis["gastid"][$i] . ">" . $ergebnis["gast"][$i];
+
+
+                echo "</td>";
+                echo "<td>" . $ergebnis["erg"][$i] . "</td>";
+                echo "<tr>";
+
+
+            }
+        }
+
+        ?>
+        </table><br>
+        <a href ='spielklassen.php'>Zeige alle Spielklassen </a>
+        <?php
+    }
+   /* if(isset($_GET['spielerid']))
     {
         $spielerid=$_GET['spielerid'];
     }
     else
     {
-        echo "id nicht gefunden";
+        echo "KompletterName nicht gefunden";
         $spielerid=1;
     }
     $pdo = new PDO('mysql:host=localhost;dbname=turnierverwaltung', $user, $pw);
@@ -62,10 +132,10 @@ function SpielerIDSpielSuche()
     //$statement = $pdo->prepare("SELECT  turnier.TurnierID, turnier.MatchDauer, turnier.Datum,turnier.Name From turnier INNER JOIN spielklasse ON turnier.TurnierID=spielklasse.SpielklasseID WHERE turnier.name=:name'");
 
     $statement = $pdo->prepare("SELECT SpielID, AufrufZeit, Schiedsrichter, Heim, Gast, SiegerID, SpielklasseID FROM spiel WHERE spiel.Heim =:namee OR spiel.Gast=:name");
-    /*
+
    SELECT DISTINCT turnier.TurnierID, turnier.MatchDauer, turnier.Datum,turnier.Name From turnier
   INNER JOIN spielklasse ON turnier.TurnierID=spielklasse.turnierid WHERE turnier.Name LIKE '%t' '%'
-     */
+
 
     $statement->execute(array('namee' =>$spielerid,'name' =>$spielerid));
     $i=0;
@@ -98,7 +168,7 @@ function SpielerIDSpielSuche()
     else
     {
         return $ergebnis;
-    }
+    }*/
 
 
 }

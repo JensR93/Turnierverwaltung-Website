@@ -2,8 +2,8 @@ $(document).ready(function(){
     //Highlight a team when hovered
     $(".m_segment").on("mouseover mouseout",function () {
             var $this = $(this);
-            var winnderId = $this.attr("data-team-id");
-            var $teams = $("[data-team-id="+winnderId+"]");
+            var winnderId = $this.attr("data-team-KompletterName");
+            var $teams = $("[data-team-KompletterName="+winnderId+"]");
             $teams.toggleClass('highlight').parent().toggleClass('highlight');
     });
     // highlight each round with its similar reversed round

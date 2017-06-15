@@ -6,7 +6,7 @@
             var winner = player.winner ? 'winner' : '';
             var ID = player.ID ? player.ID : '';
 
-            var html_player = '       <div class="player ' + winner + ' player-' + ID + '" data-id="' + ID + '">';
+            var html_player = '       <div class="player ' + winner + ' player-' + ID + '" data-KompletterName="' + ID + '">';
 
             if( player.url ){
                 html_player += '        <a class="name" href="' + player.url + '">';
@@ -258,7 +258,7 @@
                     mouseover: function(){
                         var $this = $(this); 
                         ID = $this.data('id');
-                        $(".player[data-id='" + ID + "']").addClass('hover');
+                        $(".player[data-KompletterName='" + ID + "']").addClass('hover');
                         //  alert(ID)
                     }, 
                     mouseout: function(){
