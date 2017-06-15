@@ -70,7 +70,7 @@ if(isset($_GET['turnierid'])) {
 
                 echo "<td class='HeimTable'>";
 
-                echo "<a href=spieleruebersicht.php?spielerid=" . $ergebnis["heimid"][$i] . ">" . $ergebnis["heim"][$i];
+                echo "<a href=spieleruebersicht.php?spielerid=" . $ergebnis["heimid"][$i] . "&turnierid=".$turnierid.">" . $ergebnis["heim"][$i];
                 if ($ergebnis["land_heim"][$i] != Null) {
                     echo "<img src=\"imgs/flags/" . $ergebnis["land_heim"][$i] . ".png\" alt=\"" . $ergebnis["land_heim"][$i] . "\"/>";
                 }
@@ -80,7 +80,7 @@ if(isset($_GET['turnierid'])) {
                 if ($ergebnis["land_gast"][$i] != Null) {
                     echo "<img src=\"imgs/flags/" . $ergebnis["land_gast"][$i] . ".png\" alt=\"" . $ergebnis["land_gast"][$i] . "\"/>";
                 }
-                echo "<a href=spieleruebersicht.php?spielerid=" . $ergebnis["gastid"][$i] . ">" . $ergebnis["gast"][$i];
+                echo "<a href=spieleruebersicht.php?spielerid=" . $ergebnis["gastid"][$i] . "&turnierid=".$turnierid.">" . $ergebnis["gast"][$i];
 
 
                 echo "</td>";
