@@ -121,19 +121,13 @@
   box-shadow: 2px 0 0 #cc0000;
 }
 
-.match_unit .m_segment.highlight > span a{
-  color: pink;
-}
-.match_unit .m_segment.highlight > span a:hover{
-  color: #cc0000;
-}
-.match_unit .m_segment > span strong{
+.match_unit .m_segment > span strong{ /* Ergebnisfarbe*/
   float: right;
-  color: #cc0000;
+  color: red;
   font-size: 13px;
   padding: 0 4px;
 }
-.match_unit .m_segment.highlight > span strong{
+.match_unit .m_segment.highlight > span strong{ /* Komplette Spielernamensreihe hovern */
   color: #fff;
 }
 .match_unit .m_segment > span img, .match_unit .m_segment > span span{
@@ -165,7 +159,7 @@
   width: 93%;
   text-align: center;
 }
-/*final-round style
+/*final-runde style
 ------------------------------*/
 .final{
   position: relative;
@@ -211,7 +205,7 @@
 .final .match_unit .m_segment.highlight > span{
   box-shadow: none;
 }
-/*winner team style
+/*Gewinner Team Sytle
 ------------------------------*/
 .winner_team{
   position: absolute;
@@ -296,7 +290,7 @@
 .third_position .match_unit:after{
   display: none;
 }
-/*reversed tree style
+/*Bäume rückwärts
 ------------------------------*/
 .reversed .match_unit:after{
   right: auto;

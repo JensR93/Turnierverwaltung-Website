@@ -1,22 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2cd6d1ab-737c-49fc-8e23-a99281c9c81f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/2.php" />
+    <list default="true" id="2cd6d1ab-737c-49fc-8e23-a99281c9c81f" name="Default" comment="aktuell">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/imgs/search-icon.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/brackets.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/brackets.min.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/1.php" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/Funktionen/dbspieleabfrage_neu.php" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/Funktionen/dbspieleabfrage_neu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/Funktionen/dbspielersuche.php" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/Funktionen/dbspielersuche.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/Funktionen/dbturnierabfrage.php" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/Funktionen/dbturnierabfrage.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/css/bootstrap.css" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/css/bootstrap.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/css/style.css" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/spieleruebersicht.php" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/spieleruebersicht.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/spielklassen.php" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/spielklassen.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/spieluebersichtfuerspieler.php" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/spieluebersichtfuerspieler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/suchleiste.php" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/suchleiste.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/turnierbaum.php" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/turnierbaum.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/turnieruebersicht.php" afterPath="$PROJECT_DIR$/Projekt_FUNKTIONIERT/turnieruebersicht.php" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -70,7 +60,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="spielklassen.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="spielklassen.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/spielklassen.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="245">
@@ -127,6 +117,16 @@
                 <marker date="1497586387081" expanded="true" signature="1547:1762" ph="SELECT DISTI... turnier" />
                 <marker date="1497586387081" expanded="true" signature="2889:3086" ph="SELECT DISTI... turnier" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -192,11 +192,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="123" column="42" lean-forward="true" selection-start-line="123" selection-start-column="42" selection-end-line="123" selection-end-column="42" />
+            <state relative-caret-position="2737">
+              <caret line="161" column="14" lean-forward="false" selection-start-line="161" selection-start-column="14" selection-end-line="161" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -218,19 +218,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dbspielersuche.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/Funktionen/dbspielersuche.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1048">
-              <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-              <folding>
-                <marker date="1497592020318" expanded="true" signature="484:597" ph="SELECT * FRO... spieler" />
-                <marker date="1497592020318" expanded="true" signature="1745:1800" ph="SELECT * FRO... spieler" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="spieluebersichtfuerspieler.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/spieluebersichtfuerspieler.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -243,28 +230,6 @@
                 <marker date="1497598102235" expanded="true" signature="4100:4467" ph="SELECT spiel... spieler" />
                 <marker date="1497598102235" expanded="true" signature="5128:5529" ph="..." />
                 <marker date="1497598102235" expanded="true" signature="6392:6439" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="1.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/1.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="19" column="25" lean-forward="false" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-              <folding>
-                <marker date="1497596654194" expanded="true" signature="3346:3361" ph="..." />
-                <marker date="1497596654194" expanded="true" signature="3444:3448" ph="..." />
-                <marker date="1497596654194" expanded="true" signature="3444:3525" ph="..." />
-                <marker date="1497596654194" expanded="true" signature="3444:3788" ph="..." />
-                <marker date="1497596654194" expanded="true" signature="3526:3617" ph="..." />
-                <marker date="1497596654194" expanded="true" signature="3622:3788" ph="..." />
-                <marker date="1497596654194" expanded="true" signature="4145:4202" ph="Select turni... turnier" />
-                <marker date="1497596654194" expanded="true" signature="4582:4680" ph="Select spiel... spielklasse" />
-                <marker date="1497596654194" expanded="true" signature="5058:5323" ph="..." />
-                <marker date="1497596654194" expanded="true" signature="5434:5532" ph="Select spiel... spielklasse" />
-                <marker date="1497596654194" expanded="true" signature="6205:6262" ph="Select turni... turnier" />
               </folding>
             </state>
           </provider>
@@ -453,6 +418,50 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="imgs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="icon_zahlen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Turnierverwaltung-Website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Turnierverwaltung-Website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Projekt_FUNKTIONIERT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="imgs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flags" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Turnierverwaltung-Website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Turnierverwaltung-Website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Projekt_FUNKTIONIERT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Funktionen" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -472,6 +481,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Turnierverwaltung-Website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Turnierverwaltung-Website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -922,7 +945,7 @@
       <workItem from="1497452037374" duration="71000" />
       <workItem from="1497452146680" duration="10919000" />
       <workItem from="1497465216953" duration="18550000" />
-      <workItem from="1497517515186" duration="80559000" />
+      <workItem from="1497517515186" duration="82113000" />
     </task>
     <task id="LOCAL-00001" summary="1:44">
       <created>1497483856700</created>
@@ -973,15 +996,21 @@
       <option name="project" value="LOCAL" />
       <updated>1497545304688</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="aktuell">
+      <created>1497600041487</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1497600041489</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110099000" />
+    <option name="totallyTimeSpent" value="111653000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1003,8 +1032,8 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33078602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20595238" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33078602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20595238" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -1056,7 +1085,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1:44" />
     <MESSAGE value="testttetst" />
-    <option name="LAST_COMMIT_MESSAGE" value="testttetst" />
+    <MESSAGE value="aktuell" />
+    <option name="LAST_COMMIT_MESSAGE" value="aktuell" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1305,14 +1335,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Turnierbaumart1.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1477,25 +1499,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/spielklassen.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="141" column="25" lean-forward="false" selection-start-line="141" selection-start-column="25" selection-end-line="141" selection-end-column="25" />
-          <folding>
-            <marker date="1497598440767" expanded="true" signature="1321:1944" ph="SELECT spiel... spieler" />
-            <marker date="1497598440767" expanded="true" signature="1321:1993" ph="SELECT spiel... spieler" />
-            <marker date="1497598440767" expanded="true" signature="1321:2029" ph="SELECT spiel... spieler" />
-            <marker date="1497598440767" expanded="true" signature="2048:2338" ph="SELECT spiel... spieler" />
-            <marker date="1497598440767" expanded="true" signature="2048:2387" ph="SELECT spiel... spieler" />
-            <marker date="1497598440767" expanded="true" signature="2419:2708" ph="SELECT spiel... spieler" />
-            <marker date="1497598440767" expanded="true" signature="2419:2757" ph="SELECT spiel... spieler" />
-            <marker date="1497598440767" expanded="true" signature="4686:4760" ph="SELECT count... spielklasse" />
-            <marker date="1497598440767" expanded="true" signature="4847:5045" ph="select spiel... spielklasse" />
-            <marker date="1497598440767" expanded="true" signature="7781:7801" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/turnierbaum.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
@@ -1557,9 +1560,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="123" column="42" lean-forward="true" selection-start-line="123" selection-start-column="42" selection-end-line="123" selection-end-column="42" />
+        <state relative-caret-position="2737">
+          <caret line="161" column="14" lean-forward="false" selection-start-line="161" selection-start-column="14" selection-end-line="161" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/brackets.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1428">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projekt_FUNKTIONIERT/spielklassen.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="141" column="25" lean-forward="false" selection-start-line="141" selection-start-column="25" selection-end-line="141" selection-end-column="25" />
+          <folding>
+            <marker date="1497598440767" expanded="true" signature="1321:1944" ph="SELECT spiel... spieler" />
+            <marker date="1497598440767" expanded="true" signature="1321:1993" ph="SELECT spiel... spieler" />
+            <marker date="1497598440767" expanded="true" signature="1321:2029" ph="SELECT spiel... spieler" />
+            <marker date="1497598440767" expanded="true" signature="2048:2338" ph="SELECT spiel... spieler" />
+            <marker date="1497598440767" expanded="true" signature="2048:2387" ph="SELECT spiel... spieler" />
+            <marker date="1497598440767" expanded="true" signature="2419:2708" ph="SELECT spiel... spieler" />
+            <marker date="1497598440767" expanded="true" signature="2419:2757" ph="SELECT spiel... spieler" />
+            <marker date="1497598440767" expanded="true" signature="4686:4760" ph="SELECT count... spielklasse" />
+            <marker date="1497598440767" expanded="true" signature="4847:5045" ph="select spiel... spielklasse" />
+            <marker date="1497598440767" expanded="true" signature="7781:7801" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
