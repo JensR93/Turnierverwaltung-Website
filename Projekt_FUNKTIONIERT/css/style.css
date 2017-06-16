@@ -1,7 +1,7 @@
 /*brackets style
 ------------------------------*/
 .brackets_container *{
-  box-sizing: border-box;
+  box-sizing: border-box; /* Rahmen erstellen */
 }
 .brackets_container{
   padding: 10px;
@@ -9,12 +9,8 @@
   min-width: 550px;
   background-color: #f0f0f0;
 }
-.brackets_container a{
-  text-decoration: none;
-  color: #000;
-}
 .brackets_container a:hover{
-  background-color: #fff;
+  background-color: yellow; /* Spielername hover Background gelb */
 }
 .brackets_container table{
   width: 100%;
@@ -24,16 +20,16 @@
   padding: 10px 0;
   width: 10%;
   font-weight: normal;
-  color: #777;
+  color: #777; /* red*/
 }
 /*rounds style
 ------------------------------*/
-.round_column{
+.round_column{ /* Jede Runde (im folgenden definiert durch r_x) */
   padding: 10px 5px;
   box-shadow: 0 -3px 0 rgba(0,0,0,.07);
 }
 .round_column.focus, .round_column:hover{
-  box-shadow: 0 -3px 0 #cc0000;
+  box-shadow: 0 -3px 0 #cc0000; /* Tableheader Rundenmarkierung mouseover */
 }
 .r_16 .mtch_container{
   padding: 20px 0;
@@ -73,10 +69,10 @@
   top: 50%;
   right: -13px;
 }
-.match_unit.highlight:after{
+.match_unit.highlight:after{ /* kleiner strich zum nächsten spiel*/
   background-color: #cc0000;
 }
-.match_unit .highlight.loser:after{
+.match_unit .highlight.loser:after{ /* Striche vom verlierer entfernen */
   position: absolute;
   content: '';
   width: 15px;
@@ -95,19 +91,11 @@
   position: relative;
   width: 100%;
 }
-.match_unit .m_top.winner:hover, .match_unit .m_botm.winner:hover{
-  border-right-color: #cc0000;
-}
 .match_unit .m_segment{
   border-right: solid 2px #fff;
 }
-.match_unit .m_segment:hover > span{
-  background-color: #cc0000;
-  color: #fff;
- }
-.match_unit .m_segment:hover.loser, .match_unit .m_segment.highlight .loser{
-  border-right: solid 2px #fff;
-}
+
+
 .match_unit .m_segment.winner.highlight{
   border-right-color: #cc0000;
 }
@@ -127,22 +115,14 @@
   padding: 0 2px;
   cursor: default;
 }
-.match_unit .m_segment.highlight > span{
+.match_unit .m_segment.highlight > span{ /* rote Umrandung der Spieler*/
   background-color: #cc0000;
   color: #fff;
   box-shadow: 2px 0 0 #cc0000;
 }
-.m_segment > span a{
-  float: left;
-  display: inline;
-  padding: 0 3px;
-  border-radius:2px;
-  height: 26px;
-  line-height: 25px;
-  margin-top: 2px;
-}
+
 .match_unit .m_segment.highlight > span a{
-  color: #fff;
+  color: pink;
 }
 .match_unit .m_segment.highlight > span a:hover{
   color: #cc0000;
@@ -357,28 +337,5 @@
   box-shadow: -2px 0 0 #cc0000;
 }
 
-/*smaller screens style
-------------------------------*/
-@media (max-width: 768px) {
-  .match_unit .m_segment > span span{
-    display: none;
-  }
-  .brackets_container th{
-    font-size: 12px;
-  }
-}
-@media (max-width: 900px) {
-  .match_unit .m_segment > span{
-    font-size: 11px;
-  }
-  .match_unit .m_dtls span{
-    display: none;
-  }
-}
 
-/*ie specific style
-------------------------------*/
-.ie9 .final .match_unit .m_segment,.ie8 .final .match_unit .m_segment{
-  width: 48%;
-  display: inline-block;
-}
+

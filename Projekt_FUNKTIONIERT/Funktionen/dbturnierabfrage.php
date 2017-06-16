@@ -94,15 +94,14 @@ function TurnierAllSuche()
     if ($mysqli->connect_errno > 0) {
         die("Connection to MySQL-server failed!");
     }
-    $result = mysqli_query($mysqli, "SELECT DISTINCT turnier.TurnierID, turnier.MatchDauer, turnier.Datum,turnier.Name From turnier 
+    $result = mysqli_query($mysqli, "SELECT DISTINCT turnier.turnierID as turnierid, turnier.Datum,turnier.Name From turnier 
                                            INNER JOIN spielklasse ON turnier.TurnierID=spielklasse.turnierid");
     if (mysqli_num_rows($result) > 0)
     {
         while ($row = mysqli_fetch_assoc($result)) {
-            $erg[$i][0] = $row["TurnierID"];
-            $erg[$i][1] = $row["MatchDauer"];
-            $erg[$i][2] = $row["Datum"];
-            $erg[$i][3] = $row["Name"];
+            $erg[$i][0] = $row["Datum"];
+            $erg[$i][1] = $row["Name"];
+            $erg[$i][2] = $row["turnierid"];
             $i++;
         }
         return $erg;

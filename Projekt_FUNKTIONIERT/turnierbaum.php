@@ -8,13 +8,19 @@
 <!--<![endif]-->
 <head>
     <?php
-    include 'Funktionen/dbspieleabfrage_neu.php';?>
+
+
+    ?>
+
     <meta charset="UTF-8">
     <title>Bracketz</title>
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <?php
+    include '1.php'?>
 </head>
 <body>
 
@@ -35,11 +41,11 @@ function printErgebnis($ergebnis){
     }
 }
 function rundeFuellen($erg,$j){
-    $spielklasse = $_GET['spielklasse'];
-    $siegerabfrage = "select spiel.SiegerID from spiel where RundenID=".$erg["rundenid"][$j]." and spiel.SpielklasseID=".$spielklasse;
+    $spielklasse = $_GET['spielklasseid'];
+    $siegerabfrage = "select spiel.SiegerID from spiel Inner join spielklasse on spiel.spielklasseid=spielklasse.spielklasseid where RundenID=".$erg["rundenid"][$j]." and spiel.SpielklasseID=".$spielklasse." and spielklasse.turnierID=".$_GET['turnierid'];
     $sieger = SpieleTabelleErzeugen($siegerabfrage,"sieger");
-    $ergebnisgastabfrage ="Select Satz1_gast as satz1, Satz2_gast as satz2, Satz3_gast as satz3, Satz4_gast as satz4, Satz5_gast as satz5 from spiel_ergebnis inner join spiel on spiel.SpielID=spiel_ergebnis.SpielID where RundenID=".$erg["rundenid"][$j]." and spiel.SpielklasseID=".$spielklasse." and spiel.TurnierID=".$turnierid;
-    $ergebnisheimabfrage ="Select Satz1_heim as satz1, Satz2_heim as satz2, Satz3_heim as satz3, Satz4_heim as satz4, Satz5_heim as satz5 from spiel_ergebnis inner join spiel on spiel.SpielID=spiel_ergebnis.SpielID where RundenID=".$erg["rundenid"][$j]." and spiel.SpielklasseID=".$spielklasse;
+    $ergebnisgastabfrage ="Select Satz1_gast as satz1, Satz2_gast as satz2, Satz3_gast as satz3, Satz4_gast as satz4, Satz5_gast as satz5 from spiel_ergebnis inner join spiel on spiel.SpielID=spiel_ergebnis.SpielID Inner join spielklasse on spiel.spielklasseid=spielklasse.spielklasseid where RundenID=".$erg["rundenid"][$j]." and spiel.SpielklasseID=".$spielklasse." and spielklasse.turnierID=".$_GET['turnierid'];
+    $ergebnisheimabfrage ="Select Satz1_heim as satz1, Satz2_heim as satz2, Satz3_heim as satz3, Satz4_heim as satz4, Satz5_heim as satz5 from spiel_ergebnis inner join spiel on spiel.SpielID=spiel_ergebnis.SpielID Inner join spielklasse on spiel.spielklasseid=spielklasse.spielklasseid where RundenID=".$erg["rundenid"][$j]." and spiel.SpielklasseID=".$spielklasse." and spielklasse.turnierID=".$_GET['turnierid'];
     $ergebnisgast = SpieleTabelleErzeugen($ergebnisgastabfrage,"ergebnis");
     $ergebnisheim = SpieleTabelleErzeugen($ergebnisheimabfrage,"ergebnis");
     echo"<div class=\"mtch_container\"> <div class=\"match_unit\">";
@@ -51,7 +57,7 @@ function rundeFuellen($erg,$j){
     }
     echo"\" data-team-KompletterName=".$erg["gastid"][$j].">
 		<span>
-		<a href='spieluebersichtfuerspieler.php?spielerid=".$erg["gastid"][$j]."'>";
+		<a href='spieluebersichtfuerspieler.php?spielerid=".$erg["gastid"][$j]."&turnierid=".$_GET['turnierid']."'>";
     if($erg["land_gast"][$j]!=Null){
         echo "<img src=\"imgs/flags/".$erg["land_gast"][$j].".png\" alt=\"".$erg["land_gast"][$j]."\"/>";
     }
@@ -67,7 +73,7 @@ function rundeFuellen($erg,$j){
     }
     echo"\" data-team-KompletterName=".$erg["heimid"][$j].">
 		<span>
-		<a href='spieluebersichtfuerspieler.php?spielerid=".$erg["heimid"][$j]."'>";
+		<a href='spieluebersichtfuerspieler.php?spielerid=".$erg["gastid"][$j]."&turnierid=".$_GET['turnierid']."'>";
     if($erg["land_heim"][$j]!=Null){
         echo "<img src=\"imgs/flags/".$erg["land_heim"][$j].".png\" alt=\"".$erg["land_heim"][$j]."\"/>";
     }
@@ -76,16 +82,16 @@ function rundeFuellen($erg,$j){
     printErgebnis($ergebnisheim);
     echo"</strong></span></div>";
     echo"<div class=\"m_dtls\">
-								<span>June 10, 2015 - 8:00 pm</span>
+								
 							</div></div></div>";
 
 }
 function rundeFuellenFinal($erg){
 
-    $siegerabfrage = "select spiel.SiegerID from spiel where RundenID=".$erg["rundenid"][0]." and spiel.SpielklasseID=".$_GET['spielklasse'];
+    $siegerabfrage = "select spiel.SiegerID from spiel Inner join spielklasse on spiel.spielklasseid=spielklasse.spielklasseid where RundenID=".$erg["rundenid"][0]." and spiel.SpielklasseID=".$_GET['spielklasseid']." and spielklasse.turnierID=".$_GET['turnierid'];
     $sieger = SpieleTabelleErzeugen($siegerabfrage,"sieger");
-    $ergebnisgastabfrage ="Select Satz1_gast as satz1, Satz2_gast as satz2, Satz3_gast as satz3, Satz4_gast as satz4, Satz5_gast as satz5 from spiel_ergebnis inner join spiel on spiel.SpielID=spiel_ergebnis.SpielID where RundenID=".$erg["rundenid"][0]." and spiel.SpielklasseID=".$_GET['spielklasse'];
-    $ergebnisheimabfrage ="Select Satz1_heim as satz1, Satz2_heim as satz2, Satz3_heim as satz3, Satz4_heim as satz4, Satz5_heim as satz5 from spiel_ergebnis inner join spiel on spiel.SpielID=spiel_ergebnis.SpielID where RundenID=".$erg["rundenid"][0]." and spiel.SpielklasseID=".$_GET['spielklasse'];
+    $ergebnisgastabfrage ="Select Satz1_gast as satz1, Satz2_gast as satz2, Satz3_gast as satz3, Satz4_gast as satz4, Satz5_gast as satz5 from spiel_ergebnis inner join spiel on spiel.SpielID=spiel_ergebnis.SpielID Inner join spielklasse on spiel.spielklasseid=spielklasse.spielklasseid where RundenID=".$erg["rundenid"][0]." and spiel.SpielklasseID=".$_GET['spielklasseid']." and spielklasse.turnierID=".$_GET['turnierid'];
+    $ergebnisheimabfrage ="Select Satz1_heim as satz1, Satz2_heim as satz2, Satz3_heim as satz3, Satz4_heim as satz4, Satz5_heim as satz5 from spiel_ergebnis inner join spiel on spiel.SpielID=spiel_ergebnis.SpielID Inner join spielklasse on spiel.spielklasseid=spielklasse.spielklasseid where RundenID=".$erg["rundenid"][0]." and spiel.SpielklasseID=".$_GET['spielklasseid']." and spielklasse.turnierID=".$_GET['turnierid'];
     $ergebnisgast = SpieleTabelleErzeugen($ergebnisgastabfrage,"ergebnis");
     $ergebnisheim = SpieleTabelleErzeugen($ergebnisheimabfrage,"ergebnis");
     echo"<div class=\"mtch_container\"> <div class=\"match_unit\">";
@@ -97,7 +103,7 @@ function rundeFuellenFinal($erg){
     }
     echo"\" data-team-KompletterName=".$erg["gastid"][0].">
 		<span>
-		<a href='spieluebersichtfuerspieler.php?spielerid=".$erg["gastid"][0]."'>";
+		<a href='spieluebersichtfuerspieler.php?spielerid=".$erg["gastid"][0]."&turnierid=".$_GET['turnierid']."'>";
     if($erg["land_gast"][0]!=Null){
         echo "<img src=\"imgs/flags/".$erg["land_gast"][0].".png\" alt=\"".$erg["land_gast"][0]."\"/>";
     }
@@ -113,7 +119,7 @@ function rundeFuellenFinal($erg){
     }
     echo"\" data-team-KompletterName=".$erg["heimid"][0].">
 		<span>
-		<a href='spieluebersichtfuerspieler.php?spielerid=".$erg["heimid"][0]."'>";
+		<a href='spieluebersichtfuerspieler.php?spielerid=".$erg["gastid"][0]."&turnierid=".$_GET['turnierid']."'>";
     if($erg["land_heim"][0]!=Null){
         echo "<img src=\"imgs/flags/".$erg["land_heim"][0].".png\" alt=\"".$erg["land_heim"][0]."\"/>";
     }
@@ -122,7 +128,7 @@ function rundeFuellenFinal($erg){
     printErgebnis($ergebnisheim);
     echo"</strong></span></div>";
     echo"<div class=\"m_dtls\">
-								<span>June 10, 2015 - 8:00 pm</span>
+								
 							</div></div></div>";
 
 }
@@ -131,16 +137,16 @@ function sqlAbfrage($i){
 
     //$spielklasseid=$_GET['spielklasse'];
     $gastabfrage = "SELECT  spieler.Nationalitaet, spieler.SpielerID, spieler.VName AS gast_vname, spieler.NName AS gast_nname, spiel.RundenID, spiel.NextSpiel, spiel.SiegerID From spieler 
-    INNER JOIN spiel ON spieler.SpielerID=spiel.Gast WHERE spiel.SpielklasseID=" .$_GET['spielklasse']. " AND RundenID LIKE \"1".$i."%\"";
+    INNER JOIN spiel ON spieler.SpielerID=spiel.Gast Inner join spielklasse on spiel.spielklasseid=spielklasse.spielklasseid WHERE spiel.SpielklasseID=" .$_GET['spielklasseid']. " AND RundenID LIKE \"1".$i."%\""." AND spielklasse.turnierID=".$_GET['turnierid'];
     $heimabfrage = "SELECT  spieler.Nationalitaet, spieler.SpielerID, spieler.VName AS heim_vname, spieler.NName AS heim_nname From spieler 
-    INNER JOIN spiel ON spieler.SpielerID=spiel.Heim WHERE spiel.SpielklasseID=" .$_GET['spielklasse']. " AND RundenID LIKE \"1".$i."%\"";
+    INNER JOIN spiel ON spieler.SpielerID=spiel.Heim Inner join spielklasse on spiel.spielklasseid=spielklasse.spielklasseid WHERE spiel.SpielklasseID=" .$_GET['spielklasseid']. " AND RundenID LIKE \"1".$i."%\""." AND spielklasse.turnierID=".$_GET['turnierid'];
 
 
 
     $gast = SpieleTabelleErzeugen($gastabfrage, "gast_neu");
     $heim = SpieleTabelleErzeugen($heimabfrage, "heim");
 
-    $spielabfrage = "select spiel.RundenID,spiel.NextSpiel, spiel.SpielklasseID from spiel where RundenID LIKE \"1".$i."%\" and spiel.SpielklasseID=" .$_GET['spielklasse'];
+    $spielabfrage = "select spiel.RundenID,spiel.NextSpiel, spiel.SpielklasseID from spiel Inner join spielklasse on spiel.spielklasseid=spielklasse.spielklasseid where RundenID LIKE \"1".$i."%\" and spiel.SpielklasseID=" .$_GET['spielklasseid']." and spielklasse.turnierID=".$_GET['turnierid'];
     $spiel = SpieleTabelleErzeugen($spielabfrage, "spielabfrage");
     $erg = array_merge($spiel, $gast, $heim);
 
@@ -149,7 +155,7 @@ function sqlAbfrage($i){
 if(isset($_GET['turnierid'])) {
 $turnierid = ($_GET['turnierid']);
 
-if (isset($_GET['spielklasse']))
+if (isset($_GET['spielklasseid']))
 {
 ?>
 <div class="brackets_container">
@@ -157,41 +163,55 @@ if (isset($_GET['spielklasse']))
         <!--rounds container-->
         <thead>
         <tr>
-            <th>
-                <span>Quarter-finals</span>
-            </th>
-            <th>
-                <span>Semi-finals</span>
-            </th>
-            <th>
-                <span>final</span>
-            </th>
-            <th>
-                <span>Semi-finals</span>
-            </th>
-            <th>
-                <span>Quarter-finals</span>
-            </th>
-        </tr>
+            <?php
+            $anzahlSpielerAbfrage = "Select count(spieler.SpielerID) as count FROM spieler inner join spieler_spielklasse on spieler.SpielerID = spieler_spielklasse.SpielerID where SpielklasseID =".$_GET["spielklasseid"];
+            $anzahlSpieler = SpieleTabelleErzeugen($anzahlSpielerAbfrage,"anzahlspieler");
+            $width = ((log($anzahlSpieler["anzahlspieler"],2))-1) *2 +1;
+            $anzahlRunden = (log($anzahlSpieler["anzahlspieler"],2));
+            if($width>6) {
+                echo "<th><span>Achtelfinale</span></th>";
+            }
+            if($width>4){
+                echo"<th><span>Viertelfinale</span></th>";
+            }
+            if($width>2){
+                echo"<th><span>Halbfinale</span></th>";
+            }
+            if($width>0){
+                echo"<th><span>Finale</span></th>";
+            }
+            if($width>2){
+                echo"<th><span>Halbfinale</span></th>";
+            }
+            if($width>4){
+                echo"<th><span>Viertelfinale</span></th>";
+            }
+            if($width>6) {
+                echo"<th><span>Achtelfinale</span></th>";
+            }
+            echo" </tr>
         </thead>
         <tbody>
-        <tr id="playground">
-            <?php
-            $downCounter = 5;
-            for ($i = 1; $i <= 5; $i++) {
-                $roundvar;
+        <tr id='playground'>";
+
+
+            $downCounter = $width;
+
+            for ($i = 1; $i <= $width; $i++) {
                 if ($i > $downCounter) {
-                    $erg = sqlAbfrage(4 - $downCounter);
+                    $erg = sqlAbfrage($anzahlRunden+1 - $downCounter);
                     echo "<td class=\"round_column r_";
-                    echo pow(2, (4 - $downCounter)) . " reversed";
+                    $roundd= pow(2, ($anzahlRunden+1 - $downCounter));
+                    echo $roundd." reversed";
                     echo " \">";
                     for ($j = count($erg["rundenid"]) / 2; $j < (count($erg["rundenid"])); $j++) {
+
                         rundeFuellen($erg, $j);
                     }
                 } else {
-                    $erg = sqlAbfrage(4 - $i);
+                    $erg = sqlAbfrage($anzahlRunden+1 - $i);
                     echo "<td class=\"round_column r_";
-                    echo pow(2, (4 - $i));
+                    echo pow(2, ($anzahlRunden+1 - $i));
                     if ($i == $downCounter) {
                         echo " final";
                         echo " \">";
@@ -255,8 +275,8 @@ if (isset($_GET['spielklasse']))
             echo "</div>";
             }
 
-            if (!isset($_GET['spielklasse'])) {
-                header("Location:spielklassen.php");
+            if (!isset($_GET['spielklasseid'])) {
+                header("Location:spielklassen.php?vt=true&turnierid=".$_GET["turnierid"]);
             }
             }
             else

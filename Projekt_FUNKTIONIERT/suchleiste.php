@@ -1,33 +1,18 @@
 
 <html>
 <head>
-
+    <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 
 <body>
-<form action="spieleruebersicht.php?vname=">
-    <label for="vname">Vorname:
-        <input id="vname" name="vname">
-    </label>
-    <label for="nname">Nachname:
-        <input id="nname" name="nname">
-    </label>
-    <select name="suchauswahl" id="suchauswahl">
-        <option value="1">Turniere</option>
-        <option value="2">Spieler</option>
 
-    </select>
+<?php
 
-    <input type="submit" value="senden" >
-</form>
 
-<form action="turnieruebersicht.php?name">
-    <label for="name">Turniername:
-        <input id="Turniername" name="name">
-    </label>
 
-    <input type="submit" value="senden" >
-</form>
+?>
+
+
 </body>
 </html><?php
 /**

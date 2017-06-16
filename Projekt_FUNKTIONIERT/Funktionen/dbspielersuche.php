@@ -16,10 +16,10 @@ function SpielerSuche($vorname,$nachname,$page)
 
 //SELECT * FROM spieler WHERE VName LIKE '%%' AND NName LIKE '%%'
 
-    $anzahl=30;
+    $anzahl=100;
     $start=($page-1)*$anzahl;
 
-    echo "Anfang:".$start." Ende: ".$anzahl*$page;
+   /* echo "Anfang:".$start." Ende: ".$anzahl*$page;*/
 
     $statement = $pdo->prepare("SELECT * FROM spieler WHERE VName LIKE :vorname And NName LIKE :nachname ORDER BY SpielerID Asc LIMIT ".$start.",".$anzahl);
     $statement->execute(array('vorname' => '%'.$vorname.'%', 'nachname' =>  '%'.$nachname.'%'));

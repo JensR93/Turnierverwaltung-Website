@@ -88,6 +88,17 @@ function SpieleTabelleErzeugen($sql,$team)
             }
 
         }
+        if($team=="turnierids")
+        {
+            while ($row = mysqli_fetch_assoc($result)) {
+                $erg["turnierids"][$i] = $row["TurnierID"];
+                $erg["name"][$i] = $row["Name"];
+                $erg["spielername"][$i] = $row["vname"]." ".$row["nname"];
+                $i++;
+
+            }
+
+        }
         if ($team == "gast") {
             while ($row = mysqli_fetch_assoc($result)) {
                 // echo "vname: " . $row["gast_vname"] . " - nName: " . $row["gast_nname"] . "<br>";
@@ -149,6 +160,11 @@ function SpieleTabelleErzeugen($sql,$team)
                 //echo "vname: " . $row["heim_vname"] . " - nName: " . $row["heim_nname"] . "<br>";
                 $erg["aufrufzeit"][$i] = $row["AufrufZeit"];
                 $erg["disziplinniveau"][$i] = $row["Disziplin"] . "-" . $row["Niveau"];
+
+               if(isset($row["SpielklasseID"]))
+               {
+                $erg["spielklasseid"][$i] = $row["SpielklasseID"];
+               }
                 for ($j=1; $j<=3;$j++){
                     if($row["Satz".$j."_heim"]!=null && $row["Satz".$j."_heim"]<10) {
                         $row["Satz".$j."_heim"] = "0".$row["Satz".$j."_heim"];
@@ -161,16 +177,16 @@ function SpieleTabelleErzeugen($sql,$team)
 
 
                 if($row['Satz1_heim']!=null && $row['Satz1_gast']!=null) {
-                    $erg["erg"][$i] = "[" . $row["Satz1_heim"] . ":" . $row["Satz1_gast"]."]";
+                    $erg["erg"][$i] =$row["Satz1_heim"] . ":" . $row["Satz1_gast"];
                 }
                 if($row['Satz2_heim']!=null && $row['Satz2_gast']!=null) {
 
-                    $erg["erg"][$i].="[".$row["Satz2_heim"].":".$row["Satz2_gast"]. "]";
+                    $erg["erg"][$i].=" - ".$row["Satz2_heim"].":".$row["Satz2_gast"];
                     //[".$row["Satz3_heim"].":".$row["Satz3_gast"]."]";
                 }
                 if($row['Satz3_heim']!=null && $row['Satz3_gast']!=null)
                 {
-                    $erg["erg"][$i].="[".$row["Satz3_heim"].":".$row["Satz3_gast"]."]";
+                    $erg["erg"][$i].=" - ".$row["Satz3_heim"].":".$row["Satz3_gast"];
                 }
                 $i++;
             }
@@ -179,11 +195,36 @@ function SpieleTabelleErzeugen($sql,$team)
         {
             while ($row = mysqli_fetch_assoc($result))
             {
-                $erg["spielklasseid"][$i]=$row["SpielklasseID"][$i];
+                $erg["spielklasseid"][$i]=$row["SpielklasseID"];
+                $erg["spielklassename"][$i]=$row["Disziplin"] . "-" . $row["Niveau"];
+                $erg["turniername"][$i]=$row["name"];
+                $i++;
+            }
+
+        }
+        if($team=="spielklassename")
+        {
+            while ($row = mysqli_fetch_assoc($result))
+            {
                 $erg["spielklassename"][$i]=$row["Disziplin"] . "-" . $row["Niveau"];
                 $i++;
             }
 
+        }
+        if($team=="turniername")
+        {
+            while ($row = mysqli_fetch_assoc($result))
+            {
+                $erg["turniername"][$i]=$row["name"];
+                $i++;
+            }
+
+        }
+        if($team=="anzahlspieler")
+        {
+            while ($row = mysqli_fetch_assoc($result)) {
+                $erg["anzahlspieler"] = $row["count"];
+            }
         }
 
 
